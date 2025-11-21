@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.ReverseDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container_nav_host"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph_animal_details"/>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/drawer_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_animal_details"
+        app:subheaderInsetStart="@dimen/inset_navigation_group_header"
+        app:subheaderInsetEnd="@dimen/inset_navigation_group_header"
+        app:subheaderTextAppearance="?atrkkrSectionLabelStyle"
+        app:itemHorizontalPadding="@dimen/inset_navigation_item_title"
+        app:itemTextAppearance="?atrkkrBasicInfoTextStyle"/>
+</com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.ReverseDrawerLayout>

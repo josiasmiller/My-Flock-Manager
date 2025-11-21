@@ -1,0 +1,741 @@
+<resources>
+    <string name="app_name">AnimalTrakkerFarmMobile</string>
+    <string name="app_name_long" translatable="false">Weyr Associates AnimalTrakker Farm Mobile</string>
+    <string name="app_name_settings" translatable="false">Weyr Associates AnimalTrakker Farm Mobile - Settings</string>
+    <string name="app_name_about" translatable="false">Weyr Associates AnimalTrakker Farm Mobile - About</string>
+    <string name="app_url" translatable="false">Support@AnimalTrakker.com"</string>
+    <string name="database_path" translatable="false">/data/data/com.weyr_associates.animaltrakkerfarmmobile/databases/</string>
+    <string name="service_started" translatable="false">EID Service Running</string>
+    <string name="service_label" translatable="false">EID Service</string>
+    <string name="baa_service_started" translatable="false">Baacode Service Running</string>
+    <string name="baa_service_label" translatable="false">Baacode Service</string>
+    <string name="scale_service_started" translatable="false">SCALE Service Running</string>
+    <string name="scale_service_label" translatable="false">SCALE Service</string>
+    <string name="menu_settings" translatable="false">Settings</string>
+    <string name="menu_about" translatable="false">About</string>
+
+    <string name="copy_db_assets_btn" translatable="false">Load Blank Database</string>
+    <string name="select_animal_database_btn" translatable="false">Select Animal Database</string>
+    <string name="show_animal_database_btn" translatable="false">Show Animal Database</string>
+    <string name="backup_animal_database_btn" translatable="false">Backup Animal Database</string>
+
+    <string name="dialog_title_install_database" translatable="false">Please Install Database</string>
+    <string name="dialog_message_install_database" translatable="false">Please Install Database from Data Management Screen.\n\nWould you like to do so now?</string>
+
+    <string name="dialog_title_invalid_database" translatable="false">Invalid Database</string>
+    <string name="dialog_message_invalid_database" translatable="false">The installed database has been found to be invalid. %s\n\nWould you like to load another database now?</string>
+
+    <string name="please_use_BT_reader1" translatable="false">This is NOT a Nautiz X6P</string>
+    <string name="please_use_BT_reader" translatable="false">Please Pair, select and use a Bluetooth Reader</string>
+
+    <string name="no_database" translatable="false">No Database Found</string>
+
+    <string name="copy_real_db_action" translatable="false">copyRealDB</string>
+    <string name="select_file_db_action" translatable="false">selectFileDB</string>
+    <string name="copy_blank_db_action" translatable="false">copyBlankDB</string>
+    <string name="backup_real_db_action" translatable="false">backupRealDB</string>
+
+    <string name="title_activity_add_owner" translatable="false">Add Ranch Owner</string>
+    <string name="title_activity_bull_breeding_soundness" translatable="false">Bull Breeding Soundness</string>
+    <string name="title_activity_breeding_soundness" translatable="false">Male Breeding Soundness</string>
+    <string name="title_activity_get_data" translatable="false">Database Management</string>
+    <string name="title_activity_setup" translatable="false">Setup</string>
+    <string name="title_activity_set_defaults" translatable="false">Setup</string>
+    <string name="title_activity_tissue_sample" translatable="false">Tissue Sample</string>
+    <string name="title_activity_load_animal_list" translatable="false">Load Animal List</string>
+    <string name="title_activity_add_animal" translatable="false">Simple Add Animal</string>
+    <string name="title_activity_update_tags" translatable="false">Update Tags</string>
+    <string name="title_activity_scan_and_print" translatable="false">Scan and Print</string>
+    <string name="title_activity_print_label" translatable="false">Print Label</string>
+    <string name="title_activity_simple_birth" translatable="false">Simple Births</string>
+    <string name="title_activity_counter" translatable="false">Scan, Count and Log</string>
+    <string name="title_activity_simple_add_animal" translatable="false">Simple Add Animal</string>
+    <string name="title_activity_take_notes">Take Notes</string>
+    <string name="title_activity_manage_animal_ids">Manage Animal IDs</string>
+    <string name="title_activity_opt_ag_ram_bse">Optimal Livestock Ram BSE</string>
+    <string name="title_activity_simple_evaluation">Animal Evaluation</string>
+    <string name="title_activity_simple_evaluation_sort_animal">Sort Animals</string>
+    <string name="title_activity_simple_evaluation_simple_lambing">Simple Lambing</string>
+    <string name="title_activity_simple_evaluation_simple_births">Simple Births</string>
+    <string name="title_activity_give_drugs">Give Drugs</string>
+    <string name="title_activity_vaccine_deworm">Vaccinate and Deworm</string>
+    <string name="title_activity_animal_death">Animal Death</string>
+    <string name="title_activity_drug_action_configuration">Configure Drug Action</string>
+    <string name="title_activity_drug_action_configuration_format">Configure %s</string>
+    <string name="title_activity_drug_action_edit_configuration_format">Edit %s</string>
+    <string name="title_activity_opt_livestock_ewe_ultrasound">Optimal Livestock Ewe Ultrasound</string>
+
+    <!-- Main Menu Options -->
+
+    <string name="menu_option_text_scan_print">Scan and Print</string>
+    <string name="menu_option_text_manage_animals">Animal/EID Management</string>
+    <string name="menu_option_text_animal_evaluation">Animal Evaluation</string>
+    <string name="menu_option_text_animal_care">Animal Care/Vet</string>
+    <string name="menu_option_text_birthing">Birthing</string>
+    <string name="menu_option_text_animal_movements">Animal Movements</string>
+    <string name="menu_option_text_animal_history">Animal History</string>
+    <string name="menu_option_text_setup">Setup</string>
+    <string name="menu_option_text_manage_database">Database Management</string>
+    <string name="menu_option_text_quit_app">Quit</string>
+
+    <string name="menu_option_text_scan_count_log">Scan, Count, and Log</string>
+    <string name="menu_option_text_simple_add_animal">Simple Add Animal</string>
+    <string name="menu_option_text_male_breeding_soundness">Male Breeding Soundness</string>
+    <string name="menu_option_text_simple_births">Simple Births</string>
+    <string name="menu_option_text_update_animal_id">Update Animal ID</string>
+    <string name="menu_option_text_animal_deaths">Animal Deaths</string>
+    <string name="menu_option_text_update_animal_details">Update Animal Details</string>
+    <string name="menu_option_text_optimal_ag_ram_bse">Optimal Livestock Ram BSE</string>
+    <string name="menu_option_text_optimal_ag_ewe_ultrasound">Optimal Livestock Ewe Ultrasound</string>
+    <string name="menu_option_text_take_tissue_sample">Take Tissue Samples</string>
+    <string name="menu_option_text_evaluate_animal">Evaluate Animal</string>
+    <string name="menu_option_text_select_evaluation">Select Saved Evaluation</string>
+    <string name="menu_option_text_create_evaluation">Create Evaluation</string>
+    <string name="menu_option_text_sick_animals">Give Drugs</string>
+    <string name="menu_option_text_vaccinate_deworm">Vaccinate and Deworm</string>
+    <string name="menu_option_text_general_animal_care">General Animal Care</string>
+    <string name="menu_option_text_group_vaccinate_deworm">Group Vaccinate and Deworm</string>
+    <string name="menu_option_text_group_general_animal_care">Group General Animal Care</string>
+    <string name="menu_option_text_simple_lambing">Simple Lambing</string>
+    <string name="menu_option_text_detailed_lambing">Detailed Lambing</string>
+    <string name="menu_option_text_add_female_birthing_history">Add Female Birthing History</string>
+    <string name="menu_option_text_simple_sort">Simple Sort</string>
+    <string name="menu_option_text_change_premise">Move to New Premise</string>
+    <string name="menu_option_text_buy_animals">Buy Animals</string>
+    <string name="menu_option_text_sort_ewes_breeding">Sort Ewes for Breeding</string>
+    <string name="menu_option_text_sell_animals">Sell Animals</string>
+    <string name="menu_option_text_add_contacts">Add Contacts</string>
+    <string name="menu_option_text_define_notes">Add Predefined Notes</string>
+    <string name="menu_option_text_create_defaults">Create Saved Defaults</string>
+    <string name="menu_option_text_add_veterinarian">Add Veterinarian</string>
+    <string name="menu_option_text_add_laboratory">Add Laboratory</string>
+    <string name="menu_option_text_backup_db_to_storage">Backup Database to Documents</string>
+    <string name="menu_option_text_backup_db_to_usb">Backup Database to USB Thumb Drive</string>
+    <string name="menu_option_text_select_database">Select New Database</string>
+    <string name="menu_option_text_load_seed_database">Load Seed Database</string>
+
+    <string name="text_sex_standard_unknown">Unknown</string>
+    <string name="text_sex_standard_male">Male</string>
+    <string name="text_sex_standard_female">Female</string>
+    <string name="text_sex_standard_castrate">Castrate</string>
+    <string name="text_sex_ram">Ram</string>
+    <string name="text_sex_ewe">Ewe</string>
+    <string name="text_sex_wether">Wether</string>
+    <string name="text_sex_unknown">Unknown</string>
+    <string name="text_sex_buck">Buck</string>
+    <string name="text_sex_doe">Doe</string>
+    <string name="text_sex_bull">Bull</string>
+    <string name="text_sex_cow">Cow</string>
+    <string name="text_sex_steer">Steer</string>
+    <string name="text_sex_stallion">Stallion</string>
+    <string name="text_sex_mare">Mare</string>
+    <string name="text_sex_gelding">Gelding</string>
+    <string name="text_sex_jack">Jack</string>
+    <string name="text_sex_jenny">Jenny</string>
+    <string name="text_sex_boar">Boar</string>
+    <string name="text_sex_sow">Sow</string>
+    <string name="text_sex_barrow">Barrow</string>
+
+    <string name="text_drug_type_dewormer">Dewormer</string>
+    <string name="text_drug_type_vaccine">Vaccine</string>
+    <string name="text_drug_type_antibiotic">Antibiotic</string>
+    <string name="text_drug_type_hormone">Hormone</string>
+    <string name="text_drug_type_coccidiostat">Coccidiostat</string>
+    <string name="text_drug_type_feed_supplement">Feed Supplement</string>
+    <string name="text_drug_type_analgesic">Analgesic</string>
+
+    <string name="btn_set_defaults" translatable="false">Select Saved Defaults</string>
+    <string name="btn_show_alert" translatable="false">Alert</string>
+    <string name="quit_btn" translatable="false">Quit</string>
+    <string name="btn_scan_eid" translatable="false">Scan EID</string>
+    <string name="btn_start_counter" translatable="false">Start Counter</string>
+    <string name="btn_stop_counter" translatable="false">Stop Counter</string>
+    <string name="btn_reset_counter" translatable="false">Reset Counter</string>
+    <string name="scan_sample_container_btn" translatable="false">Scan TSU</string>
+    <string name="btn_update_database" translatable="false">Update Database</string>
+    <string name="update_tag_btn" translatable="false">Update Tags</string>
+    <string name="remove_tag_btn" translatable="false">Remove Tags</string>
+    <string name="btn_look_up_animal" translatable="false">Look Up Animal</string>
+    <string name="next_rec_btn" translatable="false">Next Record</string>
+    <string name="prev_rec_btn" translatable="false">Prev. Record</string>
+    <string name="btn_clear" translatable="false">Clear</string>
+    <string name="btn_clear_data" translatable="false">Clear Data</string>
+    <string name="back_btn" translatable="false">Back</string>
+    <string name="help_btn" translatable="false">Help</string>
+    <string name="btn_take_note" translatable="false">Take Note</string>
+    <string name="scan_weight_btn" translatable="false">Scan Weight</string>
+    <string name="btn_print_label" translatable="false">Print Label</string>
+    <string name="printButton_label" translatable="false">Print Label</string>
+    <string name="add_id_btn" translatable="false">Add ID</string>
+    <string name="add_animal_btn" translatable="false">Add Animal</string>
+    <string name="convert_fill_fields" translatable="false">Please Fill in all four tag fields.</string>
+    <string name="fill_fields" translatable="false">Please Fill in all fields.</string>
+    <string name="fill_owner" translatable="false">Please Select an Owner</string>
+    <string name="fill_breed" translatable="false">Please Select a Breed</string>
+    <string name="fill_custom_evaluation" translatable="false">Select Breeding Evaluation</string>
+    <string name="wrong_id_location" translatable="false">Invalid ID Location</string>
+    <string name="add_tags_text" translatable="false">Add any new tags using the fields below.\nWARNING When you add a tag it cannot be changed. Verify all the fields before adding a tag.</string>
+
+    <string name="ok" translatable="false">OK</string>
+
+    <string name="breed_fill_fields" translatable="false">Please Choose a Breed.</string>
+    <string name="remove_tag_fill_fields" translatable="false">Please Choose Remove Tag Reason.</string>
+    <string name="enter_tag_data" translatable="false">Enter Tag Data</string>
+    <string name="tissue_fill_fields" translatable="false">Please Fill in a Tissue Type.</string>
+    <string name="test_fill_fields" translatable="false">Please Fill in a Test Type.</string>
+    <string name="container_fill_fields" translatable="false">Please Fill in a Container Type.</string>
+    <string name="animal_take_tissue" translatable="false">Take Tissue Sample</string>
+    <string name="animal_take_weight" translatable="false">Take Weight</string>
+    <string name="animal_get_months" translatable="false">Please Fill in age in Months</string>
+    <string name="animal_get_years" translatable="false">Please Fill in age in Years</string>
+    <string name="add_bull" translatable="false">Add this Animal?</string>
+
+    <string name="animal_species_lbl" translatable="false">Species</string>
+
+    <string name="animal_breed_lbl" translatable="false">Animal Breed</string>
+    <string name="animal_years_lbl" translatable="false">Years</string>
+    <string name="animal_months_lbl" translatable="false">Months</string>
+    <string name="animal_name_lbl" translatable="false">Animal Name</string>
+    <string name="animal_note_lbl" translatable="false">Notes</string>
+    <string name="animal_sire_lbl" translatable="false">Sire</string>
+    <string name="animal_dam_lbl" translatable="false">Dam</string>
+    <string name="animal_flock_lbl" translatable="false">Flock</string>
+    <string name="custom_evaluation_lbl" translatable="false">Custom Evaluation</string>
+    <string name="electronic_id_lbl" translatable="false">Electronic ID</string>
+    <string name="farm_id_lbl" translatable="false">Farm ID</string>
+    <string name="federal_id_lbl" translatable="false">Federal ID</string>
+    <string name="input_id_lbl" translatable="false">Input Search String</string>
+    <string name="trich_id_lbl" translatable="false">Trich ID</string>
+    <string name="tag_number_lbl" translatable="false">Tag Number</string>
+    <string name="tag_type_lbl" translatable="false">Tag Type</string>
+    <string name="tag_type_abbrev_lbl" translatable="false">Type</string>
+    <string name="tag_color_lbl" translatable="false">Tag Color</string>
+    <string name="tag_color_abbrev_lbl" translatable="false">Color</string>
+    <string name="tag_color_male_lbl" translatable="false">Tag Color Male Side</string>
+    <string name="tag_color_female_lbl" translatable="false">Tag Color Female Side</string>
+    <string name="tag_location_lbl" translatable="false">Tag Location</string>
+    <string name="tag_location_name_lbl" translatable="false">Location</string>
+    <string name="tag_location_abbrev_lbl" translatable="false">Ear</string>
+    <string name="take_note_lbl" translatable="false">Enter Note:</string>
+    <string name="animal_sex_lbl" translatable="false">Animal Sex</string>
+    <string name="animal_owner_lbl" translatable="false">Owner</string>
+    <string name="lab_id_lbl" translatable="false">Laboratory</string>
+    <string name="owner_id_lbl" translatable="false">Ranch Owner</string>
+    <string name="animal_estimated_age_lbl" translatable="false">Estimated Age</string>
+    <string name="animal_estimated_age_units_lbl" translatable="false">Age Units</string>
+    <string name="animal_take_tissue_sample_lbl" translatable="false">Tissue Sample</string>
+    <string name="tissue_test_lbl" translatable="false">Test Type</string>
+    <string name="tissue_sample_type_lbl" translatable="false">Tissue Type</string>
+    <string name="sample_container_lbl" translatable="false">Sample Container</string>
+    <string name="sample_container_id_lbl" translatable="false">Container ID</string>
+    <string name="sample_exp_date_lbl" translatable="false">Container Exp. Date</string>
+    <string name="first_name_lbl" translatable="false">First Name</string>
+    <string name="middle_name_lbl" translatable="false">Middle Name</string>
+    <string name="last_name_lbl" translatable="false">Last Name</string>
+    <string name="farm_name_lbl" translatable="false">Ranch Name</string>
+    <string name="farm_prefix_lbl" translatable="false">Ranch Prefix</string>
+    <string name="physical_address_lbl" translatable="false">Physical Address</string>
+    <string name="physical_city_lbl" translatable="false">Physical City</string>
+    <string name="physical_state_lbl" translatable="false">Physical State</string>
+    <string name="physical_zipcode_lbl" translatable="false">Physical Zip Code</string>
+    <string name="physical_country_lbl" translatable="false">Physical Country</string>
+    <string name="main_phone_lbl" translatable="false">Main Phone</string>
+    <string name="cell_phone_lbl" translatable="false">Cell Phone</string>
+    <string name="fax_phone_lbl" translatable="false">Fax Phone</string>
+    <string name="email_lbl" translatable="false">Email</string>
+    <string name="premise_id_lbl" translatable="false">Premise Id</string>
+    <string name="mailing_address_lbl" translatable="false">Mailing Address</string>
+    <string name="mailing_city_lbl" translatable="false">Mailing City</string>
+    <string name="mailing_state_lbl" translatable="false">Mailing State</string>
+    <string name="mailing_zipcode_lbl" translatable="false">Mailing Zip Code</string>
+    <string name="mailing_country_lbl" translatable="false">Mailing Country</string>
+    <string name="mailing_same_lbl" translatable="false">Mailing Address Same</string>
+    <string name="animal_not_found" translatable="false">Animal Not Found</string>
+
+    <string name="help_management" translatable="false">Select the management tasks you have done for this animal and then update the database. </string>
+    <string name="help_warning" translatable="false">Help Screen</string>
+    <string name="alert_warning" translatable="false">Alert Screen</string>
+
+    <string name="about_title" translatable="false">LambTracker Print for Phomemo M110</string>
+    <string name="about_text" translatable="false">Ver.1.6\n© 2021 Weyr Associates LLC.\n</string>
+    <string name="ok_label" translatable="false">OK</string>
+    <string name="yes_label" translatable="false">Yes</string>
+    <string name="no_label" translatable="false">No</string>
+    <string name="selectedFile_label" translatable="false">Select a file. </string>
+    <string name="racefilename" translatable="false">File Name For Race Reader Tags</string>
+    <string name="fileSelectButton_label" translatable="false">File. </string>
+    <string name="mainMenuTitle_label" translatable="false">Print Menu</string>
+    <string name="alert_title_bt_device_pref_enable_bluetooth">Enable Bluetooth</string>
+    <string name="alert_message_bt_device_pref_enable_bluetooth">Bluetooth must be enabled in order to acquire a list of available devices.</string>
+    <string name="alert_title_bt_device_pref_grant_bt_connect">Allow Bluetooth Connections</string>
+    <string name="alert_message_bt_device_pref_grant_bt_connect">Permission to connect to Bluetooth devices must be granted in order to acquire a list of available devices.</string>
+    <string name="start_menu_browse_missing_bt_permissions">Application dost not have necessary permissions to browse Bluetooth devices.</string>
+    <string name="toast_bluetooth_is_supported_on_device">Bluetooth is not supported on this device.</string>
+    <string name="toast_auto_bluetooth_activation_failure_permissions">Unable to automatically activate Bluetooth due to insufficient permissions.</string>
+    <string name="toast_auto_bluetooth_deactivation_failure_permissions">Unable to automatically deactivate Bluetooth due to insufficient permissions.</string>
+    <string name="content_desc_animal_trakker_logo">Animal Trakker Logo</string>
+    <string name="required_permissions_cta_message">Click here to grant the required permissions.</string>
+    <string name="required_permissions_explanation_message">Animal Trakker requires certain permissions to operate and was designed to require these permissions up front to avoid interrupting your workflow by requesting them inline while you work. Currently, some of the required permissions have not been granted.</string>
+    <string name="required_permissions_open_permissions_button_text">Permissions</string>
+    <string name="required_permissions_already_granted">This permission has already been granted!</string>
+    <string name="require_permissions_title_bluetooth_permissions_required">Permissions Required</string>
+    <string name="required_permissions_message_bluetooth_permissions_required">Access to nearby devices is required for Animal Trakker to function properly.\n\nWould you like to be taken to application permissions now?</string>
+    <string name="required_permissions_prerequisite_explanation">Animal Trakker\'s required permissions are listed below.  Please click on each to grant permissions and continue using Animal Trakker.</string>
+    <string name="animal_trakker">AnimalTrakker</string>
+    <string name="required_permissions">Required Permissions</string>
+
+    <string name="hint_text_filter">Filter</string>
+    <string name="hint_select_breed">Breed</string>
+    <string name="hint_select_sex">Sex</string>
+    <string name="hint_select_owner">Owner</string>
+    <string name="hint_select_age_years">Years</string>
+    <string name="hint_select_age_months">Months</string>
+    <string name="hint_search_animal">Search Animals</string>
+
+    <string name="title_select_default_settings">Select Default Settings</string>
+    <string name="title_select_state">Select State</string>
+    <string name="title_select_id_type">Select ID Type</string>
+    <string name="title_select_id_location">Select ID Location</string>
+    <string name="title_select_id_color">Select ID Color</string>
+    <string name="title_select_breed">Select Breed</string>
+    <string name="title_select_sex">Select Sex</string>
+    <string name="title_select_owner">Select Owner</string>
+    <string name="title_select_age_in_years">Select Age in Years</string>
+    <string name="title_select_age_in_months">Select Age in Months</string>
+    <string name="title_select_tissue_sample_type">Select Tissue Sample Type</string>
+    <string name="title_select_tissue_test">Select Tissue Test</string>
+    <string name="title_select_tissue_sample_container_type">Select Tissue Sample Container Type</string>
+    <string name="title_select_laboratory">Select Laboratory</string>
+    <string name="title_select_id_remove_reason">Select reason for removing ID.</string>
+    <string name="title_select_death_reason">Select a cause of death</string>
+    <string name="title_select_drug">Select Drug</string>
+    <string name="title_select_drug_format">Select %s</string>
+    <string name="title_select_drug_location">Select Location</string>
+
+    <string name="format_age_years">%d %s</string>
+
+    <plurals name="age_number_of_years">
+        <item quantity="one">year</item>
+        <item quantity="other">years</item>
+    </plurals>
+
+    <string name="format_age_months">%d %s</string>
+
+    <plurals name="age_number_of_months">
+        <item quantity="one">month</item>
+        <item quantity="other">months</item>
+    </plurals>
+
+    <string name="numeric_ordinal_suffix_first">st</string>
+    <string name="numeric_ordinal_suffix_second">nd</string>
+    <string name="numeric_ordinal_suffix_third">rd</string>
+    <string name="numeric_ordinal_suffix_other">th</string>
+
+    <string-array name="numeric_ordinal_suffix">
+        <item>@string/numeric_ordinal_suffix_other</item> <!-- 0 -->
+        <item>@string/numeric_ordinal_suffix_first</item> <!-- 1 -->
+        <item>@string/numeric_ordinal_suffix_second</item> <!-- 2 -->
+        <item>@string/numeric_ordinal_suffix_third</item> <!-- 3 -->
+        <item>@string/numeric_ordinal_suffix_other</item> <!-- 4 -->
+        <item>@string/numeric_ordinal_suffix_other</item> <!-- 5 -->
+        <item>@string/numeric_ordinal_suffix_other</item> <!-- 6 -->
+        <item>@string/numeric_ordinal_suffix_other</item> <!-- 7 -->
+        <item>@string/numeric_ordinal_suffix_other</item> <!-- 8 -->
+        <item>@string/numeric_ordinal_suffix_other</item> <!-- 9 -->
+    </string-array>
+
+    <string name="text_no_item_options">There are currently no items to select from.</string>
+    <string name="text_no_filtered_item_options">There are currently no items that match the current filter.</string>
+    <string name="text_scan_and_print_data_disclaimer">Data entered here <annotation backgroundColor="warning">IS <b>NOT</b> SAVED</annotation> and is <annotation backgroundColor="warning"><b>ONLY</b></annotation> used to print labels.</string>
+    <string name="text_active_defaults_format">Active Defaults:\n%s</string>
+    <string name="text_no_active_defaults_found">No active defaults found.</string>
+
+    <string name="dialog_title_incomplete_animal_entry">Missing Information</string>
+    <string name="dialog_message_incomplete_animal_entry">Please complete all required entries before attempting to save the animal to the database.</string>
+    <string name="dialog_title_partial_tag_entry_error">Partial Tag Entry</string>
+    <string name="dialog_message_partial_tag_entry_error">A tag has been partially entered.  Please enter all tag data or clear all tag data.</string>
+    <string name="dialog_title_id_entry_required_error">Id Entry Required</string>
+    <string name="dialog_message_id_entry_entry_required_error">An id entry is required to proceed.</string>
+    <string name="dialog_title_id_number_format_error_generic">Invalid ID Number Format</string>
+    <string name="dialog_message_id_number_format_error_generic">The ID number \"%s\" for %s ID type is improperly formatted.</string>
+    <string name="dialog_title_name_id_type_not_supported">Unsupported ID Type</string>
+    <string name="dialog_message_name_id_type_not_supported">The Name ID type is no longer supported and should not be used to add IDs.</string>
+    <string name="dialog_title_id_limit_exceeded_for_type">Too many %s IDs</string>
+    <string name="dialog_message_id_limit_exceeded_for_type">An animal may only have %d of ID type %s.</string>
+    <string name="dialog_title_required_official_id_number_not_met">Missing Official IDs</string>
+    <string name="dialog_message_required_official_id_number_not_met">"An animal is required to have %d or more official IDs. "</string>
+    <string name="dialog_title_duplicating_eids">Duplicate EIDs</string>
+    <string name="dialog_message_duplicating_eids">EIDs must be unique in the system. The following EIDs would create duplicates:\n\n%s</string>
+
+    <string name="toast_add_animal_success">Animal \"%s\" was successfully added</string>
+    <string name="toast_add_animal_failure">An error occurred while saving animal \"%s\"</string>
+
+    <string name="title_select_animal">Select an Animal</string>
+    <string name="text_no_animals_found">No animals found</string>
+    <string name="text_no_ids_found">No IDs found.</string>
+    <string name="text_not_applicable">N/A</string>
+
+    <string name="text_no_animal_loaded_scan_or_lookup">No animal loaded.\nScan an EID or lookup an animal.</string>
+    <string name="text_no_animal_found_for_animal_id">The specified animal was not found.</string>
+    <string name="text_no_animal_found_for_scanned_eid">No animal found for EID: %s</string>
+
+    <string name="dialog_title_incomplete_tissue_sample_entry">Missing Information</string>
+    <string name="dialog_message_incomplete_tissue_sample_entry">Laboratory, Sample Type, Test Type, and Sample Container are all required to submit a tissue sample.</string>
+    <string name="dialog_title_add_animal_from_unknown_eid">Add Animal?</string>
+    <string name="dialog_message_add_animal_from_unknown_eid">Are you sure you would like to add a new animal with EID: %s?</string>
+    <string name="dialog_title_eid_required_to_print_label">Missing EID</string>
+    <string name="dialog_message_eid_required_to_print_label">An EID is required to print a label.</string>
+    <string name="dialog_title_animal_species_mismatch_prompt">Animal Species Mismatch</string>
+    <string name="dialog_message_animal_species_mismatch_prompt">The application is currently configured to work with the \"%s\" species, but the current animal is of the \"%s\" species.\n\nWould you like to continue anyway?</string>
+
+    <string name="toast_add_tissue_test_success">Tissue sample and test request successfully added</string>
+    <string name="toast_add_tissue_test_error">An error occurred while attempting to add the tissue sample and test</string>
+    <string name="dialog_title_database_backup_complete">Database Backup Complete</string>
+    <string name="dialog_message_database_backup_complete">Your database has been successfully backed up to the AnimalTrakker Database Backups folder.\n\n%s</string>
+    <string name="dialog_title_database_backup_no_database_found">No Database Found</string>
+    <string name="dialog_message_database_backup_no_database_found">It appears you do not have a database and we cannot perform a backup until one is loaded.</string>
+    <string name="dialog_title_database_backup_write_failed">Database Backup Failed</string>
+    <string name="dialog_message_database_backup_write_failed">We were unable to create a backup of your database.  A file system error has occurred.</string>
+    <string name="dialog_title_loading_database">Loading Database</string>
+    <string name="dialog_message_loading_database">Loading the selected database.</string>
+    <string name="dialog_title_saving_database">Saving Database</string>
+    <string name="dialog_message_saving_database">Saving a backup copy of your database.</string>
+    <string name="dialog_title_database_load_failed">Database Load Failed</string>
+    <string name="dialog_message_database_load_failed">A file system error occurred while loading your database.</string>
+    <string name="dialog_title_database_load_query_check_failed">Database Check Failed</string>
+    <string name="dialog_message_database_load_query_check_failed">We were unable to read the database after it was loaded.</string>
+    <string name="dialog_title_database_load_succeeded">Database Load Succeeded</string>
+    <string name="dialog_message_database_load_succeeded">Your database was successfully loaded. The database currently has %d animal(s).</string>
+
+    <string name="title_select_predefined_note">Select a Note</string>
+    <string name="label_note_text">Note</string>
+    <string name="text_custom_note">Custom Note</string>
+    <string name="text_predefined_notes">Predefined Notes</string>
+    <string name="button_add">Add</string>
+    <string name="button_add_predefined_note">Add Predefined Note</string>
+    <string name="dialog_title_notes_added">Notes Added</string>
+    <string name="dialog_message_notes_added">Your notes were successfully saved to the database.</string>
+    <string name="dialog_title_add_notes_failed">Add Notes Failed</string>
+    <string name="dialog_message_add_notes_failed">An error occurred while saving your notes to the database.</string>
+
+    <string name="text_id_type_label">Type</string>
+    <string name="text_id_number_label">Number</string>
+    <string name="text_id_color_label">Color</string>
+    <string name="text_update_id">Update ID</string>
+    <string name="title_edit_animal_id">Edit Animal ID</string>
+
+    <string name="dialog_title_confirm_remove_animal_id">Remove ID?</string>
+    <string name="dialog_message_confirm_remove_animal_id">Are you sure you would like to remove this animal ID for the following reason?\n\n%s\n%s\n\n%s</string>
+    <string name="dialog_title_id_addition_failed">ID Addition Failed</string>
+    <string name="dialog_message_id_addition_failed">We failed to add the specified ID to this animal.</string>
+    <string name="dialog_title_id_removal_failed">ID Removal Failed</string>
+    <string name="dialog_message_id_removal_failed">We were unable to remove the selected ID from this animal.</string>
+    <string name="dialog_title_prompt_scanned_eid_usage">EID Scanned</string>
+    <string name="dialog_message_prompt_scanned_eid_usage">Would you like to use the scanned EID to look up an animal, or to add a new EID to the current animal?\n\n%s</string>
+    <string name="text_lookup_animal">Lookup Animal</string>
+    <string name="text_add_eid">Add EID</string>
+    <string name="title_activity_edit_animal_id">Edit Animal ID</string>
+    <string name="text_update_to">Update To</string>
+    <string name="text_current_id">Current ID</string>
+    <string name="dialog_title_animal_id_update_failed">Edit ID Failed</string>
+    <string name="dialog_message_animal_id_update_failed">We were unable to update the animal id.</string>
+    <string name="button_take_samples">Take Samples</string>
+    <string name="select_title_trait_option">Select Trait Value</string>
+    <string name="toast_evaluation_saved">Your evaluation was successfully saved to the database!</string>
+    <string name="toast_evaluation_save_error">An error occurred while attempting to save your evaluation.</string>
+    <string name="dialog_title_opt_ag_ram_bse_species_sex_mismatch">Not a Ram</string>
+    <string name="dialog_message_opt_ag_ram_bse_species_sex_mismatch">The current animal is either the wrong species (%s) or sex (%s).\n\nRams are required for this evaluation.</string>
+    <string name="animal_age_lbl">Age</string>
+    <string name="name_lbl">Name</string>
+    <string name="breed_lbl">Breed</string>
+    <string name="text_animal_age_format">%dY %dM</string>
+    <string name="dialog_title_confirm_load_seed_database">Load Seed Database?</string>
+    <string name="dialog_message_confirm_load_seed_database">This action will replace the current working database with the default empty AnimalTrakker database.\n\nAre you sure?</string>
+    <string name="text_label_dead">DEAD</string>
+
+    <string name="dialog_title_animal_required_alive_to_perform_action">Not Alive</string>
+    <string name="dialog_message_animal_required_alive_to_perform_action">Animals are required to be alive to perform this action.</string>
+    <string name="dialog_title_simple_evaluation_sex_standard_mismatch">Not a %s</string>
+    <string name="dialog_message_simple_evaluation_sex_standard_mismatch">Animal is required to be a %s for this evaluation.</string>
+    <string name="dialog_title_simple_evaluation_species_sex_mismatch">Not a %s</string>
+    <string name="dialog_message_simple_evaluation_species_sex_mismatch">The current animal is either the wrong species (%s) or sex (%s).\n\nAn animal is required to be a %s for this evaluation.</string>
+
+    <string name="toast_mark_animal_deceased_success">This animal was successfully marked as deceased.</string>
+    <string name="toast_mark_animal_deceased_failure">An error occurred while attempting to mark this animal as deceased.</string>
+
+    <string name="button_add_vaccine">Add Vaccine</string>
+    <string name="button_add_dewormer">Add Dewormer</string>
+    <string name="text_administer_drugs_configuration_required">No configuration present.\n\nPlease add necessary drugs.</string>
+    <string name="text_vaccine_dewormer_configuration_required">No configuration present.\n\nPlease add necessary vaccines and dewormers.</string>
+    <string name="button_configure">Configure</string>
+    <string name="button_save">Save</string>
+    <string name="text_drug">Drug</string>
+    <string name="text_drug_location">Administer Via</string>
+    <string name="text_weight">Weight</string>
+    <string name="text_weighed_on">Weighed On</string>
+    <string name="text_edit">Edit</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_tap_to_scan_weight">Tap to scan weight</string>
+    <string name="text_enter_weight">Enter Weight</string>
+    <string name="toast_administer_vaccine_dewormer_success">Administered vaccines and dewormers successfully saved to the database.</string>
+    <string name="toast_administer_drugs_success">Administered drugs successfully saved to the database.</string>
+    <string name="toast_general_animal_care_success">Animal care actions successfully saved to the database.</string>
+    <string name="toast_administer_vaccine_dewormer_error">An error occurred while saving administered vaccines and dewormers to the database.</string>
+    <string name="toast_administer_drugs_error">An error occurred while saving administered drugs to the database.</string>
+    <string name="toast_general_animal_care_error">An error occurred while saving animal care actions to the database.</string>
+    <string name="dialog_message_confirm_exit">Are you sure you would like to leave this screen?\n\nAny configuration performed here will be lost.</string>
+    <string name="dialog_title_confirm_exit">Exit?</string>
+    <string name="title_select_drug_type">Select a Drug Type</string>
+    <string name="title_select_evaluation">Select an Animal Evaluation</string>
+    <string name="button_load">Load</string>
+    <string name="title_activity_configure_evaluation">Configure Evaluation</string>
+    <string name="text_deferred">Deferred</string>
+    <string name="text_optional">Optional</string>
+    <string name="text_scored_trait_xx">Scored Trait - %s</string>
+    <string name="text_unit_trait_xx">Unit Trait - %s</string>
+    <string name="text_option_trait_xx">Custom Trait - %s</string>
+    <string name="text_units">Units</string>
+    <string name="title_select_trait">Select a Trait</string>
+    <string name="title_select_units">Select Units</string>
+    <string name="text_evaluation_name">Evaluation Name</string>
+    <string name="text_summarize_in_alert">Summarize in Alert</string>
+    <string name="toast_add_evaluation_success">Evaluation successfully saved!</string>
+    <string name="toast_add_evaluation_failure">An error occurred while attempting to save this evaluation.</string>
+    <string name="title_activity_add_drug">Add a Drug</string>
+    <string name="btn_add_drug">Add Drug</string>
+    <string name="text_drug_type">Drug Type</string>
+    <string name="text_official_name">Official Name</string>
+    <string name="text_generic_name">Generic Name</string>
+    <string name="text_lot">Lot</string>
+    <string name="text_cost">Cost</string>
+    <string name="text_cost_units">Cost Units</string>
+    <string name="text_currency">Currency</string>
+    <string name="text_amount_purchased">Amount Purchased</string>
+    <string name="text_purchase_date">Purchase Date</string>
+    <string name="text_expiration_date">Expiration Date</string>
+    <string name="text_meat_withdrawal">Meat Withdrawal</string>
+    <string name="text_user_meat_withdrawal">User Meat Withdrawal</string>
+    <string name="text_milk_withdrawal">Milk Withdrawal</string>
+    <string name="text_milk_withdrawal_units">Milk Withdrawal Units</string>
+    <string name="text_meat_withdrawal_units">Meat Withdrawal Units</string>
+    <string name="text_user_milk_withdrawal">User Milk Withdrawal</string>
+    <string name="text_official_dose">Official Dose</string>
+    <string name="text_user_dose">User Dose</string>
+    <string name="text_off_label_vet_contact">Vet Contact</string>
+    <string name="text_is_off_label">Is Off Label?</string>
+    <string name="text_is_removable">Is Removable?</string>
+    <string name="title_select_contact">Select a Contact</string>
+    <string name="toast_add_drug_succeeded">Drug successfully added to the database.</string>
+    <string name="toast_add_drug_failed">An error occurred while attempting to add the drug to the database.</string>
+    <string name="text_drug_details">Drug Details</string>
+    <string name="text_withdrawal_details">Withdrawal Details</string>
+    <string name="text_purchase_details">Purchase Details</string>
+    <string name="dialog_title_eid_number_already_in_use">EID Already Used</string>
+    <string name="dialog_message_eid_number_already_in_use">EID number %s is already in use.</string>
+    <string name="title_activity_animal_history">Animal History</string>
+    <string name="text_no_notes_found">No notes found</string>
+    <string name="text_no_drug_history_found">No drug history found</string>
+    <string name="tab_title_animal_notes_history">Notes</string>
+    <string name="tab_title_animal_drug_history">Drug History</string>
+    <string name="tab_title_animal_tissue_sample_history">Tissue Samples</string>
+    <string name="text_no_tissue_sample_history_found">No tissue samples found</string>
+    <string name="tab_title_animal_lab_test_history">Lab Tests</string>
+    <string name="text_no_tissue_test_history_found">No lab tests found</string>
+    <string name="text_born_on">Born On</string>
+    <string name="text_died_on">Died On</string>
+    <string name="text_cause_of_death">Cause of Death</string>
+    <string name="text_birth_order">Birth Order</string>
+    <string name="text_birth_type">Birth Type</string>
+    <string name="text_rear_type">Rear Type</string>
+    <string name="text_unknown">Unknown</string>
+    <string name="text_sire_flock">Sire Flock</string>
+    <string name="text_sire_name">Sire Name</string>
+    <string name="text_sire_owner">Sire Owner</string>
+    <string name="text_dam_flock">Dam Flock</string>
+    <string name="text_dam_name">Dam Name</string>
+    <string name="text_dam_owner">Dam Owner</string>
+    <string name="text_no_animal_info_found">No animal info found</string>
+    <string name="text_info">Info</string>
+    <string name="text_history">History</string>
+    <string name="title_activity_animal_details">Animal Details</string>
+    <string name="title_activity_animal_details_format">Animal Details - %s</string>
+    <string name="text_breeder">Breeder</string>
+    <string name="text_sire_breeder">Sire Breeder</string>
+    <string name="text_dam_breeder">Dam Breeder</string>
+    <string name="text_sex">Sex</string>
+    <string name="text_owner">Owner</string>
+    <string name="title_activity_add_animal_alert">Add Animal Alert</string>
+    <string name="text_hint_add_animal_alert">Enter Animal Alert</string>
+    <string name="text_add_animal_alert_failed">Failed to add animal alert.</string>
+    <string name="text_no_evals_found">No evaluations found</string>
+    <string name="tab_title_animal_evaluation_history">Evaluations</string>
+    <string name="text_ranking">Ranking</string>
+    <string name="text_none">None</string>
+    <string name="text_all">All</string>
+    <string name="text_front_left">Front Left</string>
+    <string name="text_front_right">Front Right</string>
+    <string name="text_hind_left">Hind Left</string>
+    <string name="text_hind_right">Hind Right</string>
+    <string name="text_done">Done</string>
+    <string name="title_activity_hoof_check">Hoof Check</string>
+    <string name="text_observed_foot_scald">Observed Foot Scald</string>
+    <string name="text_observed_foot_rot">Observed Foot Rot</string>
+    <string name="text_hooves_trimmed">Hooves Trimmed</string>
+    <string name="text_hoof_check">Hoof Check</string>
+    <string name="text_rot">Rot</string>
+    <string name="text_trimmed">Trimmed</string>
+    <string name="text_scald">Scald</string>
+    <string name="text_left">Left</string>
+    <string name="text_right">Right</string>
+    <string name="text_bad_horns">Bad Horns</string>
+    <string name="text_sawed_horns">Sawed Horns</string>
+    <string name="text_both">Both</string>
+    <string name="text_horn_check">Horn Check</string>
+    <string name="text_bad">Bad</string>
+    <string name="text_sawed">Sawed</string>
+    <string name="title_activity_horn_check">Horn Check</string>
+    <string name="text_wean">Wean</string>
+    <string name="text_shod">Shod</string>
+    <string name="text_shear">Shear</string>
+    <string name="text_check_hooves">Check Hooves</string>
+    <string name="text_check_horns">Check Horns</string>
+    <string name="text_shoe">Shoe</string>
+    <string name="text_weigh">Weigh</string>
+    <string name="title_activity_configure_animal_care">Configure Animal Care</string>
+    <string name="text_configure">Configure</string>
+    <string name="text_animal_care_configuration_required">No configuration present.\n\nPlease configure animal care actions.</string>
+    <string name="title_activity_general_animal_care">General Animal Care</string>
+    <string name="text_clear">Clear</string>
+    <string name="text_action">Action</string>
+    <string name="text_already_weaned">Already Weaned</string>
+    <string name="text_drawer">Drawer</string>
+    <string name="text_no_alerts_found">No alerts found</string>
+    <string name="text_title_general_info">General Info</string>
+    <string name="text_title_alerts">Alerts</string>
+    <string name="text_title_note_history">Note History</string>
+    <string name="text_title_drug_history">Drug History</string>
+    <string name="text_title_tissue_sample_history">Tissue Sample History</string>
+    <string name="text_title_tissue_test_history">Tissue Test History</string>
+    <string name="text_title_evaluation_history">Evaluation History</string>
+    <string name="text_title_info">Info</string>
+    <string name="text_title_notes">Notes</string>
+    <string name="text_title_drugs">Drugs</string>
+    <string name="text_title_tissue_samples">Tissue Samples</string>
+    <string name="text_title_tissue_tests">Tissue Tests</string>
+    <string name="text_title_evaluations">Evaluations</string>
+    <string name="text_title_history">History</string>
+    <string name="text_title_general">General</string>
+    <string name="text_title_genetics">Genetics</string>
+    <string name="text_no_genetic_characteristics_found">No genetic characteristics found</string>
+    <string name="dialog_title_animal_not_found">Animal Not Found</string>
+    <string name="dialog_message_animal_not_found">Unable to complete this action as the associated animal was not found.</string>
+    <string name="dialog_title_no_dosage_for_species">No Dosage Info</string>
+    <string name="dialog_message_no_dosage_for_species">No dosage information exists for species (%s) for drug (%s).</string>
+    <string name="text_dosage_details">Dosage Details</string>
+    <string name="text_species_for_dosage">Target Species</string>
+    <string name="title_select_species">Select Species</string>
+    <string name="btn_add_drug_lot">Add Drug Lot</string>
+    <string name="title_activity_add_drug_lot">Add Drug Lot</string>
+    <string name="text_drug_lot_details">Drug Lot Details</string>
+    <string name="text_add">Add</string>
+    <string name="text_plus_symbol">+</string>
+    <string name="text_off_label_dosage_details">Off Label Dosage</string>
+    <string name="text_off_label_target_species">Target Species</string>
+    <string name="text_off_label_dose">Off Label Dose</string>
+    <string name="text_off_label_notes">Notes</string>
+    <string name="text_end_use_date">End Use Date</string>
+    <string name="text_trade_name">Trade Name</string>
+    <string name="btn_add_dose">Add Dose</string>
+    <string name="btn_add_off_label_dose">Add Off Label Dose</string>
+    <string name="menu_option_text_manage_drugs">Manage Drugs</string>
+    <string name="toast_add_drug_dose_succeeded">Drug dose successfully added to the database.</string>
+    <string name="toast_add_drug_dose_failed">An error occurred while attempting to add the drug dose to the database.</string>
+    <string name="title_activity_add_drug_dose">Add Drug Dose</string>
+    <string name="title_activity_add_off_label_drug_dose">Add Off Label Drug Dose</string>
+    <string name="title_select_off_label_drug_dose">Select Off Label Dose</string>
+    <string name="text_summary">Summary</string>
+    <string name="text_no_stack_trace_available">No stack trace available</string>
+    <string name="title_activity_error_report">Error Report</string>
+    <string name="dialog_title_format_error_report">%s Error</string>
+    <string name="dialog_message_format_error_report">An error has occurred while processing your request.\n\n%s</string>
+    <string name="text_show">Show</string>
+    <string name="text_save_to_file">Save to File</string>
+    <string name="dialog_title_error_report_save_success">Error Report Saved</string>
+    <string name="dialog_message_error_report_save_success">Error report, \"%s\", saved to error reports folder.</string>
+    <string name="dialog_title_unsupported_database_version">Unsupported Database Version</string>
+    <string name="dialog_message_unsupported_database_version">"The database version %s is unsupported.  Databases for this version of AnimalTrakker are required to be of version %s.\n\nWould you like to load another database now?"</string>
+    <string name="dialog_title_database_patch_update_recommended">Recommended Database Version</string>
+    <string name="dialog_message_database_patch_update_recommended">Recommended database version is %s but current database version is %s. You may continue, but functionality may be slightly impacted or built in data may not be entirely up to date.\n\nWould you like to continue?</string>
+    <string name="dialog_title_prompt_install_database">Install Database?</string>
+    <string name="dialog_message_promp_install_database">Would you like to install another database now?</string>
+    <string name="dialog_title_invalid_dosage_for_species">Invalid Drug Dose</string>
+    <string name="dialog_message_invalid_dosage_for_species">Selected dose of %s is only valid for species %s and cannot be applied to animals of species %s.</string>
+    <string name="text_add_offspring">Add Offspring</string>
+    <string name="title_activity_detailed_lambing">Detailed Lambing</string>
+    <string name="dialog_title_unable_to_birth">Unable to Birth</string>
+    <string name="text_unable_to_birth_reason_no_animal">No animal is selected. Scan or lookup an animal.</string>
+    <string name="text_unable_to_birth_reason_wrong_sex">Selected animal must be a Ewe in order to birth lambs.</string>
+    <string name="text_unable_to_birth_reason_too_young">Ewe is too young to birth based on early breeding age and gestation time.</string>
+    <string name="text_unable_to_birth_reason_dead">Ewe must be alive to birth lambs.</string>
+    <string name="text_no_breeding_history">Selected animal has no breeding history.</string>
+    <string name="select_title_birth_type">Select a Birth Type</string>
+    <string name="select_title_service_type">Select Service Type</string>
+    <string name="select_title_rear_type">Select Rear Type</string>
+    <string name="title_activity_add_offspring">Add Offspring</string>
+    <string name="text_service_type">Service Type</string>
+    <string name="text_lamb_ease">Lamb Ease</string>
+    <string name="text_suck_reflex">Suck Reflex</string>
+    <string name="title_select_coat_color">Select Coat Color</string>
+    <string name="text_coat_color">Coat Color</string>
+    <string name="text_is_still_born">Is Still Born?</string>
+    <string name="text_mark_dam">Mark Dam?</string>
+    <string name="dialog_title_add_offspring_breed_percentage_error">Invalid Breed Percentages</string>
+    <string name="dialog_title_add_offspring_success">Offspring Added</string>
+    <string name="dialog_message_add_offspring_success">Successfully added offspring.\n\nTo continue adding offspring, click OK.</string>
+    <string name="title_select_veterinarian">Select Veterinarian</string>
+    <string name="text_no_available_premises">No premises found.</string>
+    <string name="title_activity_move_to_premise">Move to Premise</string>
+    <string name="text_premise">Premise</string>
+    <string name="text_no_movement_history_found">No movement history found</string>
+    <string name="text_title_movements">Movements</string>
+    <string name="text_title_movement_history">Movement History</string>
+    <string name="text_movement_to">Movement To</string>
+    <string name="text_born">Born</string>
+    <string name="text_died">Died</string>
+    <string name="text_movement_event_missing_premise">No location is specied as the destination of this movement.</string>
+    <string name="text_birth_event_missing_premise">No location is associated with the animal\'s birth.</string>
+    <string name="text_death_event_missing_premise">No location is associated with the animal\'s death.</string>
+    <string name="text_location_gap">LOCATION GAP</string>
+    <string name="dialog_title_location_birth_event_missing_premise">No Birth Location</string>
+    <string name="dialog_message_location_birth_event_missing_premise">There is no location associated with the animal\'s birth.  This is often a result of the movement date of the animals initial location differing from the animal\'s birth date.</string>
+    <string name="dialog_title_location_death_event_missing_premise">No Death Location</string>
+    <string name="dialog_message_location_death_event_missing_premise">There is no location associated with the animal\'s death.  This is often a result of the movement date of the animals final movement differing from the animal\'s death date.</string>
+    <string name="dialog_title_location_gap_event">Location History Gap</string>
+    <string name="dialog_message_location_gap_event">A location gap exists between the movements that occur on %s and %s. The location the animal moved to in the first event does not match the location the animal moved from in the second event.</string>
+    <string name="dialog_message_location_movement_event_header">See the following list of issues exhibited by the movement event:</string>
+    <string name="dialog_message_location_movement_event_item_before_birth">&#x2022; The movement occurs before the animal\'s birth date.</string>
+    <string name="dialog_message_location_movement_event_item_after_death">&#x2022; The movement occurs after the animal\'s death date.</string>
+    <string name="dialog_message_location_movement_event_item_non_physical_premise">&#x2022; The location associated with the movement event is a non-physical location.</string>
+    <string name="dialog_message_location_movement_event_item_missing_premise">&#x2022; The movement event has no associated location.</string>
+    <string name="dialog_title_location_movement_event_issues">Movement Event Issues</string>
+    <string name="text_no_animal_id_history_found">No ID history found.</string>
+    <string name="text_title_id_history">ID History</string>
+    <string name="text_date_on">Date On</string>
+    <string name="text_date_off">Date Off</string>
+    <string name="text_remove_reason">Removal Reason</string>
+    <string name="text_no_breeding_summary_found">No breeding summary found</string>
+    <string name="text_title_breeding_summary">Breeding Summary</string>
+    <string name="text_totals">Totals</string>
+    <string name="text_offspring">Offspring</string>
+    <string name="text_weaned">Weaned</string>
+    <string name="text_title_breeding_details">Breeding Details</string>
+    <string name="text_no_breeding_details_found">No breeding details found</string>
+    <string name="text_date_time_in">Date/Time In</string>
+    <string name="text_date_time_out">Date/Time Out</string>
+    <string name="text_untracked_breeding">Untracked Breeding</string>
+    <string name="text_no_offspring">No Offspring</string>
+    <string name="text_birthing_date_time">Date/Time Birthing</string>
+    <string name="text_test_results">Test Results</string>
+    <string name="text_lab_accession_id">Lab Accession ID</string>
+    <string name="text_asterisk_corrected">***Corrected</string>
+</resources>

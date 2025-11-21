@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.preferences.BluetoothDevicePreference
+        android:key="bluetooth2_mac"
+        android:title="Bluetooth Device"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:dialogTitle="Choose Bluetooth BaaCode Reader Device"/>
+    <CheckBoxPreference
+        android:key="htcconnectworkaround"
+        android:title="HTC workaround"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:summary="HTC devices need to use a different Bluetooth connection method."/>
+</PreferenceScreen>

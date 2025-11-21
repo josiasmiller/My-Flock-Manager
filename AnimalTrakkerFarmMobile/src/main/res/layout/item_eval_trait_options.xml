@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_midpoint_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+    <TextView
+        style="?atrkkrBasicInfoTextStyle"
+        android:id="@+id/text_eval_trait_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/interior_spacing_margin_half"
+        android:layout_marginVertical="@dimen/interior_spacing_margin"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_midpoint_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Eval Trait Name"/>
+    <Button
+        style="?atrkkrSpinnerButtonStyle"
+        android:id="@+id/spinner_eval_trait_options"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_spinner_button"
+        android:layout_marginStart="@dimen/interior_spacing_margin_half"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginVertical="@dimen/interior_spacing_margin"
+        app:layout_constraintStart_toEndOf="@id/guideline_midpoint_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

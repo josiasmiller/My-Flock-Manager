@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        style="?atrkkrBasicInfoLabelStyle"
+        android:id="@+id/text_premise_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:layout_marginEnd="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/interior_spacing_margin"
+        android:text="@string/text_premise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        style="?atrkkrBasicInfoTextStyle"
+        android:id="@+id/text_premise_nickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/text_premise_label"
+        app:layout_constraintEnd_toEndOf="@id/text_premise_label"
+        app:layout_constraintTop_toBottomOf="@id/text_premise_label"
+        app:layout_constraintBottom_toTopOf="@id/text_premise_address"
+        tools:text="Premise Nickname"/>
+    <TextView
+        style="?atrkkrBasicInfoTextStyle"
+        android:id="@+id/text_premise_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/text_premise_label"
+        app:layout_constraintEnd_toEndOf="@id/text_premise_label"
+        app:layout_constraintTop_toBottomOf="@id/text_premise_nickname"
+        app:layout_constraintBottom_toTopOf="@id/text_premise_number"
+        tools:text="Premise Address"/>
+    <TextView
+        style="?atrkkrBasicInfoTextStyle"
+        android:id="@+id/text_premise_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/interior_spacing_margin"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/text_premise_label"
+        app:layout_constraintEnd_toEndOf="@id/text_premise_label"
+        app:layout_constraintTop_toBottomOf="@id/text_premise_address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Premise Number/Jurisdiction"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

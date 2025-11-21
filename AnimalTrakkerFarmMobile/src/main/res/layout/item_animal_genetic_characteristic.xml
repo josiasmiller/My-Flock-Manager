@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_midpoint_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+    <TextView
+        style="?atrkkrBasicInfoTextStyle"
+        android:id="@+id/text_characteristic_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin"
+        android:gravity="start|top"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_midpoint_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Characteristic Name"/>
+    <TextView
+        style="?atrkkrBasicInfoTextStyle"
+        android:id="@+id/text_characteristic_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin"
+        android:gravity="end|top"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/guideline_midpoint_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Characteristic Value"/>
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_characteristic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="text_characteristic_name,text_characteristic_value"/>
+    <TextView
+        style="?atrkkrBasicInfoLabelStyle"
+        android:id="@+id/text_calculation_method"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:layout_marginEnd="@dimen/interior_spacing_margin"
+        android:layout_marginTop="@dimen/interior_spacing_margin"
+        android:layout_marginBottom="@dimen/activity_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_midpoint_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/barrier_characteristic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Calculation Method"/>
+    <TextView
+        style="?atrkkrBasicInfoLabelStyle"
+        android:id="@+id/text_timestamp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/interior_spacing_margin_half"
+        android:layout_marginBottom="@dimen/activity_margin"
+        android:gravity="end"
+        app:layout_constraintStart_toEndOf="@id/guideline_midpoint_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier_characteristic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Timestamp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

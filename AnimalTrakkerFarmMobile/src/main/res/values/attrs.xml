@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="atrkkrDividerStyleHorizontal" format="reference"/>
+    <attr name="atrkkrDividerStyleVertical" format="reference"/>
+    <attr name="atrkkrMenuCTAButtonStyle" format="reference"/>
+    <attr name="atrkkrActionButtonStyle" format="reference"/>
+    <attr name="atrkkrActionImageButtonStyle" format="reference"/>
+    <attr name="atrkkrTopButtonStyle" format="reference"/>
+    <attr name="atrkkrSectionLabelStyle" format="reference"/>
+    <attr name="atrkkrSubSectionLabelStyle" format="reference"/>
+    <attr name="atrkkrInputLabelStyle" format="reference"/>
+    <attr name="atrkkrInputFieldStyle" format="reference"/>
+    <attr name="atrkkrSpinnerButtonStyle" format="reference"/>
+    <attr name="atrkkrBasicInfoLabelStyle" format="reference"/>
+    <attr name="atrkkrBasicInfoTextStyle" format="reference"/>
+    <attr name="atrkkrDisclaimerTextStyle" format="reference"/>
+    <attr name="atrkkrTopButtonBarStyle" format="reference"/>
+    <attr name="atrkkrItemTitleStyle" format="reference"/>
+    <attr name="atrkkrItemSubtitleStyle" format="reference"/>
+    <attr name="atrkkrItemContentStyle" format="reference"/>
+    <attr name="atrkkrItemCaptionStyle" format="reference"/>
+    <attr name="atrkkrSwitchStyle" format="reference"/>
+    <attr name="atrkkrCheckBoxStyle" format="reference"/>
+</resources>

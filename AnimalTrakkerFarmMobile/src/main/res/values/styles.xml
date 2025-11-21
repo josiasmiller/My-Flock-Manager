@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.AnimalTrakker.Divider.Base" parent="">
+        <item name="android:background">@drawable/background_divider</item>
+    </style>
+    <style name="Widget.AnimalTrakker.Divider.Horizontal" parent="Widget.AnimalTrakker.Divider.Base">
+        <item name="android:layout_width">@dimen/divider_thickness</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="Widget.AnimalTrakker.Divider.Vertical" parent="Widget.AnimalTrakker.Divider.Base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_thickness</item>
+    </style>
+    <style name="Widget.AnimalTrakker.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+    <style name="Widget.AnimalTrakkerMobile.DatePicker" parent="android:Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:calendarViewShown">true</item>
+    </style>
+    <style name="Widget.AnimalTrakker.MenuCTAButton" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="Widget.AnimalTrakker.ActionButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_action</item>
+    </style>
+    <style name="Widget.AnimalTrakker.ActionImageButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/button_action</item>
+    </style>
+    <style name="Widget.AnimalTrakker.TopButton" parent="Widget.AnimalTrakker.ActionButton">
+        <item name="android:autoSizeMinTextSize">14sp</item>
+        <item name="android:autoSizeMaxTextSize">20sp</item>
+        <item name="android:autoSizeStepGranularity">1sp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="Widget.AnimalTrakker.SpinnerButton" parent="Widget.AppCompat.Button">
+        <item name="android:autoSizeMinTextSize">14sp</item>
+        <item name="android:autoSizeMaxTextSize">24sp</item>
+        <item name="android:autoSizeStepGranularity">1sp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:drawableEnd">@drawable/ic_drop_down_spinner</item>
+        <item name="android:paddingVertical">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+    </style>
+    <style name="Widget.AnimalTrakker.SectionLabel" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">start|bottom</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="Widget.AnimalTrakker.SubSectionLabel" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">start|bottom</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="Widget.AnimalTrakker.InputLabel" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">start|bottom</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="Widget.AnimalTrakker.InputField" parent="Widget.AppCompat.EditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxWidth">@dimen/width_max_input_field</item>
+        <item name="android:textSize">@dimen/text_size_input_field</item>
+    </style>
+    <style name="Widget.AnimalTrakker.SimpleItem.TextView" parent="">
+        <item name="android:textSize">32sp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <style name="Widget.AnimalTrakker.DisclaimerTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="Widget.AnimalTrakker.BasicInfoLabelStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">start|bottom</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="Widget.AnimalTrakker.BasicInfoTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">start|top</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="Widget.AnimalTrakker.TopButtonBar" parent="">
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+    <style name="Widget.AnimalTrakker.Item.Title" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">start|top</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.AnimalTrakker.Item.Subtitle" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">start|top</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_dimmer</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.AnimalTrakker.Item.Content" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">start|top</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_dimmer</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="Widget.AnimalTrakker.Item.Caption" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">start|top</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_dimmer</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.AnimalTrakker.BottomSheet.AnimalActionMenu" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="behavior_draggable">false</item>
+    </style>
+    <style name="Widget.AnimalTrakker.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:switchTextAppearance">@style/Widget.AnimalTrakker.InputLabel</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
+    </style>
+    <style name="Widget.AnimalTrakker.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textAppearance">@style/Widget.AnimalTrakker.InputLabel</item>
+        <item name="android:drawablePadding">@dimen/interior_spacing_margin</item>
+        <item name="android:button">@drawable/ic_check_box_large</item>
+        <item name="android:buttonTint">@color/tint_checkbox_button</item>
+    </style>
+</resources>

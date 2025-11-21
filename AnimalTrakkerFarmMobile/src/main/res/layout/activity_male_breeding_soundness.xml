@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.TopButtonBar
+        android:id="@+id/button_panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <GridLayout
+        android:id="@+id/grid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="4">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textSize="20sp"
+            android:textColor= "@color/black"
+            android:text="@string/animal_breed_lbl" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textSize="20sp"
+            android:textColor= "@color/black"
+            android:text="@string/animal_years_lbl" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textSize="20sp"
+            android:textColor= "@color/black"
+            android:text="@string/animal_months_lbl" />
+        <Button
+            style="?atrkkrSpinnerButtonStyle"
+            android:id="@+id/animal_breed_spinner"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/height_spinner_button"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_row="1" />
+        <Button
+            style="?atrkkrSpinnerButtonStyle"
+            android:id="@+id/age_year_spinner"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/height_spinner_button"
+            android:layout_gravity="left"
+            android:layout_column="2"
+            android:layout_row="1" />
+        <Button
+            style="?atrkkrSpinnerButtonStyle"
+            android:id="@+id/age_month_spinner"
+            android:layout_width="120dp"
+            android:layout_height="@dimen/height_spinner_button"
+            android:layout_gravity="left"
+            android:layout_column="3"
+            android:layout_row="1" />
+
+    </GridLayout>
+    <RelativeLayout
+        android:id="@+id/TopButtonRow"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <GridLayout
+        android:id="@+id/secondRowButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="3" >
+
+
+    </GridLayout>
+    <GridLayout
+        android:id="@+id/grid2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_number_lbl" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_color_abbrev_lbl" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_location_abbrev_lbl" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_type_abbrev_lbl" />
+
+    </GridLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft = "10dp">
+    </ListView>
+
+    <GridLayout
+        android:id="@+id/grid3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1">
+    <ScrollView
+        android:id="@+id/scroll02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:layout_row="0">
+
+        <TableLayout
+            android:id="@+id/TableLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </TableLayout>
+    </ScrollView>
+    </GridLayout>
+    <ScrollView
+        android:id="@+id/scroll03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/TableLayout03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp">
+        </TableLayout>
+    </ScrollView>
+    <GridLayout
+        android:id="@+id/note"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4">
+
+
+        <TextView
+            android:id="@+id/take_note_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_column="0"
+            android:layout_gravity="left|center"
+            android:layout_row="1"
+            android:inputType="none"
+            android:text="@string/take_note_lbl"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/note_text"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:enabled="true"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="monospace" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/owner_id_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_column="0"
+            android:layout_gravity="left|center"
+            android:layout_row="2"
+            android:inputType="none"
+            android:text="@string/owner_id_lbl"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            style="?atrkkrSpinnerButtonStyle"
+            android:id="@+id/owner_name_spinner"
+            android:layout_width="400dp"
+            android:layout_height="@dimen/height_spinner_button"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_row="2" />
+
+    </GridLayout>
+</LinearLayout>

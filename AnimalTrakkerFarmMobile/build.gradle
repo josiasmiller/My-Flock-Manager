@@ -1,0 +1,134 @@
+import com.github.jk1.license.render.InventoryMarkdownReportRenderer
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '2.0.21'
+    id 'com.github.jk1.dependency-license-report' version '2.9'
+}
+
+android {
+
+//    signingConfigs {
+//        debug {
+//            storeFile file('/home/kenm/AnimalTrakker/KeyStore.jks')
+//            storePassword 'LTPUx1191'
+//            keyAlias 'key0'
+//            keyPassword 'LTPUx1191'
+//        }
+//    }
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.weyr_associates.animaltrakkerfarmmobile'
+        minSdkVersion 30
+
+        targetSdkVersion 34
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+        versionName = readVersionName()
+        versionCode readVersionCode()
+        archivesBaseName = "${project.name}-${versionName}.${versionCode}"
+        buildConfigField "Boolean", "HIDE_INACTIVE_MENU_OPTIONS", "false"
+        buildConfigField "Boolean", "SHOW_INACTIVE_MENU_OPTIONS_AS_ENABLED", "false"
+        buildConfigField "Boolean", "EID_READER_SERVICE_AUTO_POST_TEST_EID_ON_SCAN", "false"
+        buildConfigField "Boolean", "BAACODE_SERVICE_AUTO_POST_TEST_BAA_ON_SCAN", "false"
+        buildConfigField "Boolean", "SCALE_SERVICE_AUTO_POST_TEST_WEIGHT_ON_SCAN", "false"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "Boolean", "HIDE_INACTIVE_MENU_OPTIONS", "true"
+        }
+        debug {
+            debuggable true
+            kotlinOptions {
+                freeCompilerArgs = ["-Xdebug"]
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17.toString()
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    namespace 'com.weyr_associates.animaltrakkerfarmmobile'
+}
+
+dependencies {
+    implementation project(':zxinglibweyr')
+    implementation project(':escposprinter')
+
+    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.activity:activity-ktx:1.9.3'
+    implementation "androidx.preference:preference-ktx:1.2.1"
+    implementation "androidx.navigation:navigation-ui-ktx:2.8.3"
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.8.3'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+    implementation 'com.handheldgroup.tools:serialport:1.6.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3'
+
+    testImplementation "junit:junit:4.13.2"
+    testImplementation "androidx.test:core:1.6.1"
+}
+
+def readVersionCode() {
+    def versionPropsFile = file('version.properties')
+    if (versionPropsFile.canRead()) {
+        def versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionPropsFile))
+        return versionProps['VERSION_CODE'].toInteger()
+    } else {
+        throw new GradleException("version.properties file not found!")
+    }
+}
+
+def readVersionName() {
+    def versionPropsFile = file('version.properties')
+    if (versionPropsFile.canRead()) {
+        def versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionPropsFile))
+
+        def versionMajor = versionProps['VERSION_MAJOR'].toInteger()
+        def versionMinor = versionProps['VERSION_MINOR'].toInteger()
+        def versionBuild = versionProps['VERSION_BUILD'].toInteger()
+
+        return "${versionMajor}.${versionMinor}.${versionBuild}"
+    } else {
+        throw new GradleException("version.properties file not found!")
+    }
+}
+
+tasks.register("incrementBuildNumber") {
+    doLast {
+        def versionPropsFile = file('version.properties')
+        if (versionPropsFile.canRead()) {
+            def versionProps = new Properties()
+            versionProps.load(new FileInputStream(versionPropsFile))
+            def versionBuild = versionProps['VERSION_BUILD'].toInteger() + 1
+            def versionCode = versionProps['VERSION_CODE'].toInteger() + 1
+            versionProps['VERSION_BUILD'] = versionBuild.toString()
+            versionProps['VERSION_CODE'] = versionCode.toString()
+            versionProps.store(versionPropsFile.newWriter(), null)
+        } else {
+            throw new GradleException("version.properties file not found!")
+        }
+    }
+}
+
+licenseReport {
+    excludeOwnGroup = true
+    configurations = ['releaseRuntimeClasspath']
+    renderers = [new InventoryMarkdownReportRenderer('DEPS.md', 'Dependencies')]
+}

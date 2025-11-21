@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/text_title_general">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@id/nav_dst_animal_info"
+                    android:title="@string/text_title_info"/>
+                <item
+                    android:id="@id/nav_dst_animal_alerts"
+                    android:title="@string/text_title_alerts"/>
+                <item
+                    android:id="@id/nav_dst_animal_genetics"
+                    android:title="@string/text_title_genetics"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/text_title_history">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@id/nav_dst_animal_notes"
+                    android:title="@string/text_title_notes"/>
+                <item
+                    android:id="@+id/nav_dst_animal_drug_history"
+                    android:title="@string/text_title_drugs"/>
+                <item
+                    android:id="@id/nav_dst_animal_tissue_sample_history"
+                    android:title="@string/text_title_tissue_samples"/>
+                <item
+                    android:id="@id/nav_dst_animal_tissue_test_history"
+                    android:title="@string/text_title_tissue_tests"/>
+                <item
+                    android:id="@id/nav_dst_animal_evaluations_history"
+                    android:title="@string/text_title_evaluations"/>
+                <item
+                    android:id="@id/nav_dst_animal_movements_history"
+                    android:title="@string/text_title_movements"/>
+                <item
+                    android:id="@id/nav_dst_animal_id_history"
+                    android:title="@string/text_title_id_history"/>
+                <item
+                    android:id="@id/nav_dst_animal_breeding_summary"
+                    android:title="@string/text_title_breeding_summary"/>
+                <item
+                    android:id="@id/nav_dst_animal_breeding_details"
+                    android:title="@string/text_title_breeding_details"/>
+            </group>
+        </menu>
+    </item>
+</menu>

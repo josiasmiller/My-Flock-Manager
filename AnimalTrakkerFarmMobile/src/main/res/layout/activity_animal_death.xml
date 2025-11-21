@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.TopButtonBar
+        android:id="@+id/button_panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include layout="@layout/view_lookup_animal_info"
+        android:id="@+id/lookup_animal_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_thickness"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+    <LinearLayout
+        android:id="@+id/container_animal_death_inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="?atrkkrInputLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/interior_spacing_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:text="Cause of Death"/>
+        <Button
+            style="?atrkkrSpinnerButtonStyle"
+            android:id="@+id/spinner_animal_death_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+        <TextView
+            style="?atrkkrInputLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/interior_spacing_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:text="Date of Death"/>
+        <Button
+            style="?atrkkrSpinnerButtonStyle"
+            android:id="@+id/spinner_animal_death_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/container_dead_animal_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="?atrkkrBasicInfoTextStyle"
+            android:id="@+id/text_dead_animal_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="This animal is already dead.\n\nPlease scan or lookup another animal."/>
+    </FrameLayout>
+</LinearLayout>

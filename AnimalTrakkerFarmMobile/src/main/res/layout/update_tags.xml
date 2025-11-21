@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.TopButtonBar
+        android:id="@+id/button_panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <GridLayout
+        android:id="@+id/taggrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_number_lbl" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_color_abbrev_lbl" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_location_abbrev_lbl" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_type_abbrev_lbl" />
+
+        <Button
+            style="?atrkkrActionButtonStyle"
+            android:id="@+id/remove_tags_btn"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_column="4"
+            android:layout_row="0"
+            android:layout_gravity="left|top"
+            android:text="@string/remove_tag_btn"
+            android:onClick="removeTag"
+            android:textSize="14dp" />
+
+    </GridLayout>
+    <TableLayout
+        android:id="@+id/taglist"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_width="600dp">
+
+        <TableRow android:gravity="center">
+            <ListView
+                android:id="@android:id/list"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft = "10dp">
+            </ListView>
+        </TableRow>
+    </TableLayout>
+
+    <Spinner
+        android:id="@+id/tag_remove_reason_spinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_gravity="right|center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft = "10dp"
+        android:layout_marginTop = "10dp"
+        android:layout_marginBottom = "10dp"
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:layout_row="0"
+        android:inputType="none"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor= "@color/black"
+        android:text="@string/add_tags_text" />
+
+    <GridLayout
+        android:id="@+id/newtag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_number_lbl" />
+
+        <EditText
+            android:id="@+id/new_tag_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_gravity="left"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:enabled="true"
+            android:textSize="20sp"
+            android:textColor= "@color/black"
+            android:inputType="text"
+            android:typeface="monospace" >
+        </EditText>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_color_abbrev_lbl" />
+
+        <Spinner
+            android:id="@+id/tag_color_spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_gravity="left|center"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_location_name_lbl" />
+
+        <Spinner
+            android:id="@+id/tag_location_spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:layout_gravity="left|center"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_type_abbrev_lbl" />
+
+        <Spinner
+            android:id="@+id/tag_type_spinner"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="left|center"
+            android:layout_row="1"
+            android:layout_alignParentLeft="true" />
+
+    </GridLayout>
+    
+    <Button
+        style="?atrkkrActionButtonStyle"
+        android:id="@+id/add_tag_btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft = "10dp"
+        android:layout_gravity="left|top"
+        android:text="@string/add_id_btn"
+        android:onClick="addTag"
+        android:textSize="14dp" />
+
+</LinearLayout>

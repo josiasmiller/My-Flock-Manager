@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/view_animal_info_basic"
+        android:id="@+id/animal_basic_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <include layout="@layout/view_lookup_animal_info_none"
+        android:id="@+id/no_animal_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/animal_basic_info"
+        app:layout_constraintTop_toTopOf="@id/animal_basic_info"
+        app:layout_constraintEnd_toEndOf="@id/animal_basic_info"
+        app:layout_constraintBottom_toBottomOf="@id/animal_basic_info"
+        tools:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

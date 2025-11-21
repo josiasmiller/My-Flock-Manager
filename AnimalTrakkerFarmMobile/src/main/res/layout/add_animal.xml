@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.TopButtonBar
+        android:id="@+id/button_panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <GridLayout
+        android:id="@+id/grid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textSize="20sp"
+            android:text="@string/owner_id_lbl"
+            android:textColor= "@color/black"
+            android:typeface="monospace"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textSize="20sp"
+            android:textColor= "@color/black"
+            android:text="@string/animal_years_lbl"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textSize="20sp"
+            android:textColor= "@color/black"
+            android:text="@string/animal_months_lbl"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <Spinner
+            android:id="@+id/owner_name_spinner"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:layout_row="1"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/age_year_spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_column="1"
+            android:layout_row="1" />
+        <Spinner
+            android:id="@+id/age_month_spinner"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_column="2"
+            android:layout_row="1" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="2"
+            android:inputType="none"
+            android:textSize="20sp"
+            android:text="@string/animal_breed_lbl"
+            android:typeface="monospace"
+            android:textColor= "@color/black"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <Spinner
+            android:id="@+id/animal_breed_spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:layout_row="3"
+            android:textSize="24sp" />
+
+    </GridLayout>
+    <GridLayout
+        android:id="@+id/newtag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_type_abbrev_lbl" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_location_name_lbl" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_color_abbrev_lbl" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_column="3"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_number_lbl" />
+
+        <Spinner
+            android:id="@+id/first_tag_type_spinner"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|center"
+            android:layout_row="1"
+            android:layout_alignParentLeft="true" />
+
+        <Spinner
+            android:id="@+id/first_tag_location_spinner"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_gravity="left|center"
+            android:textSize="30dp" />
+
+        <Spinner
+            android:id="@+id/first_tag_color_spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:layout_gravity="left|center"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/first_new_tag_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_gravity="left"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:enabled="true"
+            android:textSize="20sp"
+            android:textColor= "@color/black"
+            android:inputType="text"
+            android:typeface="monospace" >
+        </EditText>
+
+        <Spinner
+            android:id="@+id/second_tag_type_spinner"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|center"
+            android:layout_row="2"
+            android:layout_alignParentLeft="true" />
+
+        <Spinner
+            android:id="@+id/second_tag_location_spinner"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_gravity="left|center"
+            android:textSize="30dp" />
+
+        <Spinner
+            android:id="@+id/second_tag_color_spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:layout_gravity="left|center"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/second_new_tag_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_gravity="left"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:enabled="true"
+            android:textSize="20sp"
+            android:textColor= "@color/black"
+            android:inputType="text"
+            android:typeface="monospace" >
+        </EditText>
+
+        <Spinner
+            android:id="@+id/third_tag_type_spinner"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|center"
+            android:layout_row="3"
+            android:layout_alignParentLeft="true" />
+
+        <Spinner
+            android:id="@+id/third_tag_location_spinner"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:layout_gravity="left|center"
+            android:textSize="30dp" />
+
+        <Spinner
+            android:id="@+id/third_tag_color_spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:layout_gravity="left|center"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/third_new_tag_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_gravity="left"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:enabled="true"
+            android:textSize="20sp"
+            android:textColor= "@color/black"
+            android:inputType="text"
+            android:typeface="monospace" >
+        </EditText>
+
+    </GridLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AnimalTrakkerMobile" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:datePickerStyle">@style/Widget.AnimalTrakkerMobile.DatePicker</item>
+        <item name="atrkkrDividerStyleHorizontal">@style/Widget.AnimalTrakker.Divider.Horizontal</item>
+        <item name="atrkkrDividerStyleVertical">@style/Widget.AnimalTrakker.Divider.Vertical</item>
+        <item name="atrkkrMenuCTAButtonStyle">@style/Widget.AnimalTrakker.MenuCTAButton</item>
+        <item name="atrkkrActionButtonStyle">@style/Widget.AnimalTrakker.ActionButton</item>
+        <item name="atrkkrActionImageButtonStyle">@style/Widget.AnimalTrakker.ActionImageButton</item>
+        <item name="atrkkrTopButtonStyle">@style/Widget.AnimalTrakker.TopButton</item>
+        <item name="atrkkrSectionLabelStyle">@style/Widget.AnimalTrakker.SectionLabel</item>
+        <item name="atrkkrSubSectionLabelStyle">@style/Widget.AnimalTrakker.SubSectionLabel</item>"
+        <item name="atrkkrInputLabelStyle">@style/Widget.AnimalTrakker.InputLabel</item>
+        <item name="atrkkrInputFieldStyle">@style/Widget.AnimalTrakker.InputField</item>
+        <item name="atrkkrSpinnerButtonStyle">@style/Widget.AnimalTrakker.SpinnerButton</item>
+        <item name="atrkkrDisclaimerTextStyle">@style/Widget.AnimalTrakker.DisclaimerTextStyle</item>
+        <item name="atrkkrBasicInfoLabelStyle">@style/Widget.AnimalTrakker.BasicInfoLabelStyle</item>
+        <item name="atrkkrBasicInfoTextStyle">@style/Widget.AnimalTrakker.BasicInfoTextStyle</item>
+        <item name="atrkkrTopButtonBarStyle">@style/Widget.AnimalTrakker.TopButtonBar</item>
+        <item name="atrkkrItemTitleStyle">@style/Widget.AnimalTrakker.Item.Title</item>
+        <item name="atrkkrItemSubtitleStyle">@style/Widget.AnimalTrakker.Item.Subtitle</item>
+        <item name="atrkkrItemContentStyle">@style/Widget.AnimalTrakker.Item.Content</item>
+        <item name="atrkkrItemCaptionStyle">@style/Widget.AnimalTrakker.Item.Caption</item>
+        <item name="atrkkrSwitchStyle">@style/Widget.AnimalTrakker.Switch</item>
+        <item name="atrkkrCheckBoxStyle">@style/Widget.AnimalTrakker.CheckBox</item>
+    </style>
+    <style name="Theme.AnimalTrakkerMobile.Modal">
+        <item name="homeAsUpIndicator">@drawable/ic_home_as_up_close</item>
+    </style>
+    <style name="Theme.AnimalTrakkerMobile.ItemSelectionDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+    <style name="Theme.AnimalTrakkerMobile.BottomSheet.AnimalActionMenu" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.AnimalTrakker.BottomSheet.AnimalActionMenu</item>
+    </style>
+</resources>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- Android 11- Legacy Bluetooth Permissions -->
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30"/>
+
+    <!--
+        NOTE: The application does not start device discovery, and so does not need the
+        ACCESS_FINE_LOCATION permission.  It only cancels ongoing discovery while connecting
+        to previously bonded devices for performance reasons.
+    -->
+
+    <!-- Android 12+ Bluetooth Permissions -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".app.AnimalTrakkerApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:hasFragileUserData="true"
+        android:theme="@style/Theme.AnimalTrakkerMobile"
+        android:label="@string/app_name">
+
+        <activity
+            android:name=".app.main.MainActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.encode.EncodeActivity"
+            android:exported="true"
+            android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="weyr.LT.ENCODE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- This allows us to handle the Share button in Contacts. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/x-vcard" />
+            </intent-filter>
+            <!-- This allows us to handle sharing any plain text . -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.permissions.RequiredPermissionsActivity"
+            android:label="Required Permissions"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity
+            android:name=".app.label.StartMenu"
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|fontScale"
+			android:exported = "true"
+            android:screenOrientation="sensorPortrait">
+			<intent-filter>
+				<action android:name="android.intent.action.SEND"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="image/jpeg" />
+				<data android:mimeType="image/jpg" />
+				<data android:mimeType="image/bmp" />
+				<data android:mimeType="image/png" />
+				<data android:mimeType="application/pdf" />
+			</intent-filter>
+		</activity>
+
+        <activity
+            android:name=".app.label.ScanAndPrintActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_scan_and_print"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+        <activity
+            android:name=".app.animal.counter.AnimalCounterActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_counter"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name=".app.animal.add.SimpleAddAnimalActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_simple_add_animal"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity android:name=".app.animal.evaluation.tissue.TissueSampleActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_tissue_sample"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity
+            android:name=".app.animal.care.drugs.AddDrugActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/title_activity_add_drug"/>
+        <activity
+            android:name=".app.animal.care.drugs.doses.AddDrugDoseActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/title_activity_add_drug_dose"/>
+        <activity
+            android:name=".app.animal.care.drugs.doses.offlabel.AddOffLabelDrugDoseActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/title_activity_add_off_label_drug_dose"/>
+        <activity
+            android:name=".app.animal.care.drugs.lots.AddDrugLotActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/title_activity_add_drug_lot"/>
+        <activity
+            android:name=".app.animal.action.AnimalActionsActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_vaccine_deworm"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity
+            android:name=".app.animal.action.drug.DrugActionConfigurationActivity"
+            android:label="@string/title_activity_drug_action_configuration"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".app.animal.evaluation.simple.SimpleEvaluationActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_simple_evaluation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name=".app.animal.evaluation.optimalag.OptAgRamBreedingSoundnessActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_opt_ag_ram_bse"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name=".app.storage.database.system.DatabaseManagementActivity"
+            android:label="@string/title_activity_get_data"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".app.animal.note.TakeNotesActivity"
+            android:label="@string/title_activity_take_notes"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".app.animal.id.manage.ManageAnimalIdsActivity"
+            android:label="@string/title_activity_manage_animal_ids"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".app.animal.id.edit.EditAnimalIdActivity"
+            android:label="@string/title_activity_edit_animal_id"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".app.preferences.EditPreferencesActivity"
+            android:label="@string/app_name_settings"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".app.AboutActivity"
+            android:label="@string/app_name_about"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".app.select.SelectAnimalActivity"
+            android:theme="@style/Theme.AnimalTrakkerMobile.Modal"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity
+            android:name=".app.animal.death.AnimalDeathActivity"
+            android:label="@string/title_activity_animal_death"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".app.animal.evaluation.configuration.ConfigureEvaluationActivity"
+            android:label="@string/title_activity_configure_evaluation"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".app.animal.history.AnimalHistoryActivity"
+            android:label="@string/title_activity_animal_history"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".app.animal.details.AnimalDetailsActivity"
+            android:label="@string/title_activity_animal_details"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".app.animal.alert.AddAnimalAlertActivity"
+            android:label="@string/title_activity_add_animal_alert"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible"/>
+        <activity
+            android:name=".app.animal.action.care.AnimalCareConfigurationActivity"
+            android:label="@string/title_activity_configure_animal_care"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".app.animal.action.care.hooves.EditHoofCheckActivity"
+            android:label="@string/title_activity_hoof_check"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".app.animal.action.care.horns.EditHornCheckActivity"
+            android:label="@string/title_activity_horn_check"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".app.reporting.errors.ErrorReportActivity"
+            android:label="@string/title_activity_error_report"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".app.animal.breeding.DetailedLambingActivity"
+            android:label="@string/title_activity_detailed_lambing"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".app.animal.breeding.AddOffspringActivity"
+            android:label="@string/title_activity_add_offspring"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".app.animal.premise.MoveToPremiseActivity"
+            android:label="@string/title_activity_move_to_premise"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service
+            android:name=".app.device.eid.EIDReaderService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".app.device.scale.ScaleDeviceService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".app.device.baacode.BaacodeReaderService"
+            android:exported="false" >
+        </service>
+    </application>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+    </queries>
+</manifest>

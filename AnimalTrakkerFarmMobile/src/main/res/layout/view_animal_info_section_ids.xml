@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <include layout="@layout/view_animal_id_column_headers"/>
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+        style="?atrkkrDividerStyleVertical"
+        android:layout_marginVertical="@dimen/interior_spacing_margin_half"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="?atrkkrBasicInfoTextStyle"
+            android:id="@+id/text_no_ids_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/interior_spacing_margin"
+            android:text="@string/text_no_ids_found"/>
+    </FrameLayout>
+</LinearLayout>

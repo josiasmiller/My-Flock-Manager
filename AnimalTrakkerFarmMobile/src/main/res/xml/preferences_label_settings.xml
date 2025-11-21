@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.preferences.BluetoothDevicePreference
+        android:key="bluetooth_printer"
+        android:title="Bluetooth Device"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:dialogTitle="Choose Bluetooth Printer"/>
+    <CheckBoxPreference
+        android:key="autop"
+        android:title="AutoPrint"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:summary="Auto print the barcode label"/>
+    <CheckBoxPreference
+        android:key="soundness_summary"
+        android:title="Alternate Label"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:summary="Use soundness summary instead of text"/>
+    <EditTextPreference
+        android:key="label"
+        android:title="Text to add to printed label"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:summary="Text to add to printed label">
+    </EditTextPreference>
+</PreferenceScreen>

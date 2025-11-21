@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.TopButtonBar
+        android:id="@+id/button_panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <GridLayout
+        android:id="@+id/grid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="21">
+
+        <TextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:layout_marginLeft = "10dp"
+            android:layout_marginTop = "20dp"
+            android:inputType="none"
+            android:text="@string/animal_species_lbl"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor= "@color/black"/>
+
+        <Spinner
+            android:id="@+id/species_spinner"
+            android:layout_width="400dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_gravity="left|top"
+            android:layout_marginTop = "20dp"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:layout_marginLeft = "10dp"
+            android:layout_marginTop = "40dp"
+            android:inputType="none"
+            android:text="@string/animal_breed_lbl"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor= "@color/black"/>
+
+        <Spinner
+            android:id="@+id/animal_breed_spinner"
+            android:layout_width="400dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_gravity="left|top"
+            android:layout_marginTop = "40dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lab_id_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_column="0"
+            android:layout_gravity="left|center"
+            android:layout_row="3"
+            android:layout_marginTop = "40dp"
+            android:inputType="none"
+            android:text="@string/lab_id_lbl"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/lab_name_spinner"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_marginTop = "40dp"
+            android:layout_row="3" />
+
+        <TextView
+            android:id="@+id/tissue_test_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_column="0"
+            android:layout_gravity="left|center"
+            android:layout_row="4"
+            android:layout_marginTop = "40dp"
+            android:inputType="none"
+            android:text="@string/tissue_test_lbl"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/sample_test_spinner"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_marginTop = "40dp"
+            android:layout_row="4" />
+
+        <TextView
+            android:id="@+id/tissue_sample_type_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_column="0"
+            android:layout_gravity="left|center"
+            android:layout_row="5"
+            android:layout_marginTop = "40dp"
+            android:inputType="none"
+            android:text="@string/tissue_sample_type_lbl"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/sample_type_spinner"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_marginTop = "40dp"
+            android:layout_row="5" />
+
+        <TextView
+            android:id="@+id/sample_container_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_column="0"
+            android:layout_gravity="left|center"
+            android:layout_row="6"
+            android:layout_marginTop = "40dp"
+            android:inputType="none"
+            android:text="@string/sample_container_lbl"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/sample_container_type_spinner"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_marginTop = "40dp"
+            android:layout_row="6" />
+
+        <TextView
+            android:id="@+id/owner_id_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_marginTop = "40dp"
+            android:layout_column="0"
+            android:layout_gravity="left|center"
+            android:layout_row="7"
+            android:inputType="none"
+            android:text="@string/owner_id_lbl"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/owner_name_spinner"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_marginTop = "40dp"
+            android:layout_row="7" />
+
+        <TextView
+            android:id="@+id/custom_evaluation_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_marginTop = "40dp"
+            android:layout_column="0"
+            android:layout_gravity="left|center"
+            android:layout_row="8"
+            android:inputType="none"
+            android:text="@string/custom_evaluation_lbl"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/custom_evaluation_spinner"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_marginTop="40dp"
+            android:layout_row="8" />
+
+        <View
+            android:id="@+id/dividerbar04"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_row="19"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:background="@android:color/black">
+        </View>
+
+
+
+    </GridLayout>
+
+</LinearLayout>

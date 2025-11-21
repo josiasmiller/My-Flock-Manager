@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.preferences.BluetoothDevicePreference
+        android:key="bluetooth1_mac"
+        android:title="Bluetooth Device"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:dialogTitle="Choose Bluetooth Scale Device"/>
+</PreferenceScreen>

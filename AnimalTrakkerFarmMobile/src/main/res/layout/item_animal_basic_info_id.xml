@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        style="?atrkkrBasicInfoTextStyle"
+        android:id="@+id/text_id_type_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@dimen/layout_weight_id_type"
+        android:layout_gravity="start|top"
+        tools:text="Type Name"/>
+    <TextView
+        style="?atrkkrBasicInfoTextStyle"
+        android:id="@+id/text_id_location_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@dimen/layout_weight_id_location"
+        android:layout_gravity="start|top"
+        tools:text="Location"/>
+    <TextView
+        style="?atrkkrBasicInfoTextStyle"
+        android:id="@+id/text_id_color_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@dimen/layout_weight_id_color"
+        android:layout_gravity="start|top"
+        tools:text="Color"/>
+    <TextView
+        style="?atrkkrBasicInfoTextStyle"
+        android:id="@+id/text_id_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@dimen/layout_weight_id_number"
+        android:layout_gravity="start|top"
+        tools:text="Id Number"/>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        android:key="resetsettings"
+        android:title="Reset Settings"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:fragment="com.weyr_associates.animaltrakkerfarmmobile.app.preferences.ResetSettingsPreferences"/>
+    <Preference
+        android:key="displaysettings"
+        android:title="Display Settings"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:fragment="com.weyr_associates.animaltrakkerfarmmobile.app.preferences.DisplaySettingsPreferencesFragment"/>
+    <Preference
+        android:key="readersettings"
+        android:title="Reader Settings"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:fragment="com.weyr_associates.animaltrakkerfarmmobile.app.preferences.ReaderSettingsPreferencesFragment"/>
+    <Preference
+        android:key="baacodesettings"
+        android:title="BaaCode Settings"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:fragment="com.weyr_associates.animaltrakkerfarmmobile.app.preferences.BaaCodeSettingsPreferencesFragment"/>
+    <Preference
+        android:key="scalesettings"
+        android:title="Scale Settings"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:fragment="com.weyr_associates.animaltrakkerfarmmobile.app.preferences.ScaleSettingsPreferencesFragment"/>
+    <Preference
+        android:key="labelsettings"
+        android:title="Label Settings"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:fragment="com.weyr_associates.animaltrakkerfarmmobile.app.preferences.LabelSettingsPreferencesFragment"/>
+</PreferenceScreen>

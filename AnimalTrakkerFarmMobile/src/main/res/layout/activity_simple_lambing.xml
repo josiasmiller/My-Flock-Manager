@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.TopButtonBar
+        android:id="@+id/button_panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <GridLayout
+        android:id="@+id/grid2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_number_lbl" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_color_abbrev_lbl" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_location_abbrev_lbl" />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor= "@color/black"
+            android:text="@string/tag_type_abbrev_lbl" />
+
+    </GridLayout>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft = "10dp">
+    </ListView>
+    <ScrollView
+        android:id="@+id/scroll01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:id="@+id/TableLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp">
+        </TableLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/lowerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/grid4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2"
+        android:gravity="center">
+
+        <TableRow android:gravity="center">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:layout_weight="1"
+                android:text="@string/animal_note_lbl"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <ListView
+                android:id="@+id/notelist"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="left">
+            </ListView>
+        </TableRow>
+    </TableLayout>
+    </RelativeLayout>
+
+</LinearLayout>

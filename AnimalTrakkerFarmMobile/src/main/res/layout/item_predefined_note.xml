@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        style="?atrkkrSpinnerButtonStyle"
+        android:id="@+id/button_spinner_note"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_spinner_button"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+    <ImageButton
+        android:id="@+id/button_clear_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/interior_spacing_margin_half"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_close"/>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/main_menu_screen_margin">
+        <Button
+            style="?atrkkrMenuCTAButtonStyle"
+            android:id="@+id/btn_administer_drugs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_option_text_sick_animals"/>
+        <Button
+            style="?atrkkrMenuCTAButtonStyle"
+            android:id="@+id/btn_vaccinate_deworm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_option_text_vaccinate_deworm"/>
+        <Button
+            style="?atrkkrMenuCTAButtonStyle"
+            android:id="@+id/btn_general_animal_care"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_option_text_general_animal_care"/>
+        <Button
+            style="?atrkkrMenuCTAButtonStyle"
+            android:id="@+id/btn_group_vaccinate_deworm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_option_text_group_vaccinate_deworm"/>
+        <Button
+            style="?atrkkrMenuCTAButtonStyle"
+            android:id="@+id/btn_group_general_animal_care"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_option_text_group_general_animal_care"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

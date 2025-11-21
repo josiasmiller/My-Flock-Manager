@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.TopButtonBar
+        android:id="@+id/button_panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include layout="@layout/view_lookup_animal_info"
+        android:id="@+id/lookup_animal_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_thickness"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_female_breeding_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            style="?atrkkrBasicInfoTextStyle"
+            android:id="@+id/text_content_area_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </FrameLayout>
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_thickness"/>
+    <Button
+        style="?atrkkrActionButtonStyle"
+        android:id="@+id/button_add_offspring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin"
+        android:layout_gravity="end|center_vertical"
+        android:text="@string/text_add_offspring"/>
+</LinearLayout>

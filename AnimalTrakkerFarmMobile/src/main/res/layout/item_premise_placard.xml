@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+    <TextView
+        style="?atrkkrItemTitleStyle"
+        android:id="@+id/text_premise_nickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/interior_spacing_margin"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/image_selected"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Premise Nickname"/>
+    <ImageView
+        android:id="@+id/image_selected"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        style="?atrkkrItemContentStyle"
+        android:id="@+id/text_premise_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/interior_spacing_margin"
+        android:maxLines="5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_premise_nickname"
+        tools:text="Premise Address"/>
+    <TextView
+        style="?atrkkrItemCaptionStyle"
+        android:id="@+id/text_premise_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/interior_spacing_margin"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_premise_jurisdiction"
+        app:layout_constraintTop_toBottomOf="@id/text_premise_address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Premise Number"/>
+    <TextView
+        style="?atrkkrItemCaptionStyle"
+        android:id="@+id/text_premise_jurisdiction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/interior_spacing_margin"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_premise_address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Premise Jurisdiction"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

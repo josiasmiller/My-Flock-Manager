@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference
+        android:key="useserialeid"
+        android:title="Use Serial EID Reader (Nautiz X6P only)"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:summary="Use Serial Connected Reader vs. Bluetooth"/>
+    <CheckBoxPreference
+        android:key="deduplicate"
+        android:title="De Duplicate EID Tags"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:summary="De Duplicate EID Tags to a depth of 5"/>
+    <EditTextPreference
+        android:key="filenamemod"
+        android:title="File Name Modifier for Race Read Tags"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:summary="0"/>
+    <com.weyr_associates.animaltrakkerfarmmobile.app.preferences.BluetoothDevicePreference
+        android:key="bluetooth_mac"
+        android:title="Bluetooth Device"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:dialogTitle="Choose Bluetooth EID Reader Device"/>
+    <CheckBoxPreference
+        android:key="htcconnectworkaround"
+        android:title="HTC workaround"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:summary="HTC devices need to use a different Bluetooth connection method."/>
+</PreferenceScreen>

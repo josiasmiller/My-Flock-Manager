@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.TopButtonBar
+        style="?atrkkrTopButtonBarStyle"
+        android:id="@+id/button_panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include layout="@layout/view_lookup_animal_info"
+        android:id="@+id/lookup_animal_info"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/interior_spacing_margin"
+        android:background="@color/background_widget"/>
+    <include layout="@layout/view_animal_id_inputs_add"
+        android:id="@+id/input_animal_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_thickness"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_animal_ids"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

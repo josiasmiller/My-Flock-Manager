@@ -1,0 +1,3 @@
+./gradlew :AnimalTrakkerFarmMobile:generateLicenseReport
+cat ./AnimalTrakkerFarmMobile/build/reports/dependency-license/DEPS.md > DEPS.md
+

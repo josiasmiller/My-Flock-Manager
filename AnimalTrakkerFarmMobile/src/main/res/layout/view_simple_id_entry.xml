@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <include layout="@layout/view_animal_id_column_headers"/>
+    <include layout="@layout/view_animal_id_inputs"
+        android:id="@+id/input_animal_id_1"/>
+    <include layout="@layout/view_animal_id_inputs"
+        android:id="@+id/input_animal_id_2"/>
+    <include layout="@layout/view_animal_id_inputs"
+        android:id="@+id/input_animal_id_3"/>
+</LinearLayout>

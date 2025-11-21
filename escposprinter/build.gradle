@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+android {
+//    signingConfigs {
+//        debug {
+//            storeFile file('/home/kenm/AnimalTrakker/KeyStore.jks')
+//            storePassword 'LTPUx1191'
+//            keyAlias 'key0'
+//            keyPassword 'LTPUx1191'
+//        }
+//    }
+    compileSdkVersion 34
+
+    defaultConfig {
+
+        minSdkVersion 29
+        targetSdkVersion 34
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'com.dantsu.escposprinter'
+}
+
+dependencies {
+    implementation 'androidx.annotation:annotation:1.7.1' // don't update to 1.6.1 yet
+}

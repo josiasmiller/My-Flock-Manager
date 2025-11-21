@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/data_lbl"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_marginLeft = "10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/trait_data"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+</TableRow>

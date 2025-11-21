@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/width_top_panel_button"
+    android:layout_height="@dimen/height_top_panel_button">
+    <Button
+        style="?atrkkrTopButtonStyle"
+        android:id="@+id/btn_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ProgressBar
+        android:id="@+id/progress_spinner_scanning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="24dp"
+        android:translationZ="16dp"
+        android:indeterminateTint="?colorControlNormal"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+</FrameLayout>

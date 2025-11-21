@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.TopButtonBar
+        android:id="@+id/button_panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <include layout="@layout/view_animal_evaluation"
+            android:id="@+id/animal_evaluation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/divider_evaluation_bottom"/>
+        <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+            android:id="@+id/divider_evaluation_bottom"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/divider_thickness"
+            android:layout_marginHorizontal="@dimen/activity_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/animal_evaluation"/>
+        <TextView
+            style="?atrkkrBasicInfoTextStyle"
+            android:id="@+id/text_tissue_sample_print_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginVertical="@dimen/interior_spacing_margin"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_take_tissue_samples"
+            app:layout_constraintTop_toBottomOf="@id/divider_evaluation_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Tissue Sample Print Label"/>
+        <Button
+            style="?atrkkrActionButtonStyle"
+            android:id="@+id/button_take_tissue_samples"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_margin"
+            android:layout_marginVertical="@dimen/interior_spacing_margin"
+            android:text="@string/button_take_samples"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_evaluation_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

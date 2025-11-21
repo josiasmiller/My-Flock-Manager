@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.TopButtonBar
+        android:id="@+id/button_panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="?atrkkrInputLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_margin"
+                android:layout_marginTop="@dimen/interior_spacing_margin"
+                android:layout_gravity="start|center_vertical"
+                android:text="@string/text_evaluation_name"/>
+            <EditText
+                style="?atrkkrInputFieldStyle"
+                android:id="@+id/input_evaluation_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_margin"
+                android:layout_marginTop="@dimen/interior_spacing_margin_half"
+                android:layout_marginBottom="@dimen/interior_spacing_margin"
+                android:layout_gravity="end|center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    style="?atrkkrInputLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_summarize_in_alert"/>
+                <androidx.appcompat.widget.SwitchCompat
+                    style="?atrkkrSwitchStyle"
+                    android:id="@+id/toggle_summarize_in_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin"/>
+            </LinearLayout>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_01"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_02"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_03"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_04"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_05"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_06"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_07"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_08"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_09"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_10"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_11"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_12"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_13"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_14"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_15"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_16"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_17"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_18"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_19"/>
+            <com.weyr_associates.animaltrakkerfarmmobile.app.core.widget.Divider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_thickness"
+                android:layout_marginHorizontal="@dimen/activity_margin"/>
+            <include layout="@layout/view_eval_trait_configuration"
+                android:id="@+id/eval_trait_configuration_20"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
