@@ -4,7 +4,7 @@ NOTE: I IMPORTED THIS FROM ANIMAL TRAKKER MOBILE FROM GITLAB ALL CREDIT FOR CODE
 HERE IS THE LINK https://gitlab.com/animaltrakker_system/animaltrakker_farm_mobile 
 
 
-I am going to strip the app of non-sheep features and add some more while still trying to keep the project in sync with animal trakkers. Especially the compatibility of  eid reader and scales.
+Eventually I am going to strip the app of non-sheep features. But for now i will add all the features i want to the main stream at gitlab because the developers there have more experience than i do.
 
 
 # AnimalTrakker_Farm_Mobile
